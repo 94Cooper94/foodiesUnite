@@ -1,0 +1,28 @@
+body {
+    background-color: slategrey;
+}
+.container {
+    width: stretch;
+}
+.row {
+    width: stretch;
+}
+.col {
+    max-width: 30%;
+    margin-top: 35px;
+}
+li {
+    font-family: 'Anton', sans-serif;
+    padding-top: 20px;
+    /* font-family: 'Source Code Pro', monospace; */
+}
+.nav-wrapper {
+    justify-content: center;
+    text-align: center;
+}
+img {
+    padding-top: 10px;
+    max-height: 50px;
+    max-width: 50px;
+    display: block;
+}
