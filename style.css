@@ -6,6 +6,7 @@ body {
 }
 .row {
     width: stretch;
+    justify-items: center;
 }
 .col {
     max-width: 30%;
@@ -25,4 +26,15 @@ img {
     max-height: 50px;
     max-width: 50px;
     display: block;
+}
+.col {
+    justify-items: center;
+}
+.card {
+    justify-self: center;
+}
+.div {
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
 }
