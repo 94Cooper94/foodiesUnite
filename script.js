@@ -10,15 +10,19 @@
 // 
 
 
-
+// initializes the gender select input field
+// https://materializecss.com/select.html
+$(document).ready(function(){
+    $('select').formSelect();
+  });
 
 
 //
 //
 
 
-// https://materializecss.com/range.html
 // calorie counter in scale form; isn't appearing for whatever reason
+// https://materializecss.com/range.html
 var slider = document.getElementById('test-slider');
   noUiSlider.create(slider, {
    start: [20, 80],
