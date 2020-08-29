@@ -8,6 +8,80 @@
 /////////////////////////////////////////////////////////////////////
 // coop's section
 // 
+var $ctrl = $(document.createElement("input")).attr({
+  id: 'alcohol-free'
+ ,name: 'alcohol-free'
+ ,value: '0'
+ ,text : 'Alcohol-free'
+ ,type: 'checkbox'
+ ,checked: true
+})
+var $ctrl = $(document.createElement("input")).attr({
+  id: 'celery-free'
+ ,name: 'celery-free'
+ ,value: '1'
+ ,text : 'Celery-free'
+ ,type: 'checkbox'
+ ,checked: true
+})
+var $ctrl = $(document.createElement("input")).attr({
+  id: 'crustacean-free'
+ ,name: 'crustacean-free'
+ ,value: '2'
+ ,text : 'Crustacean-free'
+ ,type: 'checkbox'
+ ,checked: true
+})
+var $ctrl = $(document.createElement("input")).attr({
+  id: 'crustacean-free'
+ ,name: 'crustacean-free'
+ ,value: '2'
+ ,text : 'Crustacean-free'
+ ,type: 'checkbox'
+ ,checked: true
+})
+var $ctrl = $(document.createElement("input")).attr({
+  id: 'crustacean-free'
+ ,name: 'crustacean-free'
+ ,value: '2'
+ ,text : 'Crustacean-free'
+ ,type: 'checkbox'
+ ,checked: true
+})
+var $ctrl = $(document.createElement("input")).attr({
+  id: 'crustacean-free'
+ ,name: 'crustacean-free'
+ ,value: '2'
+ ,text : 'Crustacean-free'
+ ,type: 'checkbox'
+ ,checked: true
+})
+var $ctrl = $(document.createElement("input")).attr({
+  id: 'crustacean-free'
+ ,name: 'crustacean-free'
+ ,value: '2'
+ ,text : 'Crustacean-free'
+ ,type: 'checkbox'
+ ,checked: true
+})
+v
+var $ctrl = $(document.createElement("input")).attr({
+  id: 'crustacean-free'
+ ,name: 'crustacean-free'
+ ,value: '2'
+ ,text : 'Crustacean-free'
+ ,type: 'checkbox'
+ ,checked: true
+})
+var $ctrl = $(document.createElement("input")).attr({
+  id: 'crustacean-free'
+ ,name: 'crustacean-free'
+ ,value: '2'
+ ,text : 'Crustacean-free'
+ ,type: 'checkbox'
+ ,checked: true
+})
+
 
 
 // initializes the gender select input field
@@ -42,14 +116,20 @@ var slider = document.getElementById('test-slider');
 // function that runs upon clicking a foodPreference checkbox
 // function takes the boxVal of the checkbox clicked and either adds or removes it
 // tbh idk how to assign values to checkboxes lmao but not actually lmao
-$("#checkbox").on("click", function (boxVal) {
+$("#mealType").on("click", function (mealType) {
     $.ajax({
-        url: `https://api.edamam.com/search?q=${boxVal}&app_id=d88e78b8&app_key=fa1417bd0cb262ef6b1af85af54b21db`,
+        url: `https://api.edamam.com/search?q=${mealType}&app_id=d88e78b8&app_key=fa1417bd0cb262ef6b1af85af54b21db`,
         method: "GET",
     })
     console.log("https://api.edamam.com/search?q=dinner&app_id=d88e78b8&app_key=fa1417bd0cb262ef6b1af85af54b21db")
 });
-
+$("#checkbox").on("click", function (boxVal) {
+  $.ajax({
+      url: `https://api.edamam.com/search?q=${boxVal}&app_id=d88e78b8&app_key=fa1417bd0cb262ef6b1af85af54b21db`,
+      method: "GET",
+  })
+  console.log("https://api.edamam.com/search?q=dinner&app_id=d88e78b8&app_key=fa1417bd0cb262ef6b1af85af54b21db")
+});
 
 // 
 //
