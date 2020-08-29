@@ -63,6 +63,89 @@
     </div>
   </div>
 
+  <!-- sample loading bar for while information is being pulled -->
+  <div class="progress">
+    <div class="indeterminate"></div>
+  </div>
+
+
+  <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="first_name" type="text" class="validate" placeholder="First Name">
+          <label for="first_name"></label>
+        </div>
+        <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate" placeholder="Last Name">
+          <label for="last_name"></label>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="BMI" type="text" class="validate" placeholder="BMI">
+            <label for="BMI"></label>
+          </div>
+        </div>
+
+        <!-- sample input field to provide gender -->
+        <div class="input-field col s12">
+          <select>
+            <option value="0" disabled selected>Choose your option</option>
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+            <option value="3">Prefer Not to Share</option>
+          </select>
+          <label>Placeholder Label</label>
+        </div>
+
+
+        <!-- calorie restrictor slider -->
+        <div id="test-slider"></div>
+
+        <!-- checkbox idea to specify food restrictions/inclusions -->
+        <form action="#">
+          <p>
+            <label>
+              <input id="checkbox" type="checkbox" />
+              <span>Meat</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input id="checkbox" type="checkbox" />
+              <span>Seafood</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input id="checkbox" type="checkbox" />
+              <span>Dairy</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input id="checkbox" type="checkbox" />
+              <span>Gluten</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input id="checkbox" type="checkbox" />
+              <span>Nuts</span>
+            </label>
+          </p>
+
+        </form>
+
+
+        <div class="progress">
+          <div class="indeterminate"></div>
+        </div>
+
+      </div>
+    </form>
+  </div> 
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
