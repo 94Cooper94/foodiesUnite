@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Foodies Unite</title>
+    <!-- Compiled and minified CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet" />
+    <!-- stylesheets -->
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+  <nav>
+    <div class="nav-wrapper">
+      <a href="index.html" class="brand-logo"><i class="fas fa-cheese"></i></a>
+    </div>
+  </nav>
+
+ 
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="card horizontal">
+            <div class="card-stacked">
+              <div class="card-content">
+                <img src="media/loseWeight.PNG">
+              </div>
+              <div class="card-action">
+                <a href="#">Weight Loss</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card horizontal">
+            <div class="card-stacked">
+              <div class="card-content">
+                <img src="media/maintainWeight.PNG">
+              </div>
+              <div class="card-action">
+                <a href="#">Meal Ideas</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card horizontal">
+            <div class="card-stacked">
+              <div class="card-content">
+                <img src="media/gainWeight.png">
+              </div>
+              <div class="card-action">
+                <a href="#">Weight Gain</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- sample loading bar for while information is being pulled -->
+  <div class="progress">
+    <div class="indeterminate"></div>
+  </div>
+
+
+  <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="height" type="text" class="validate" placeholder="Height">
+          <label for="height"></label>
+        </div>
+        <div class="input-field col s6">
+          <input id="weight" type="text" class="validate" placeholder="Weight">
+          <label for="weight"></label>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="BMI" type="text" class="validate" placeholder="BMI">
+            <label for="BMI"></label>
+          </div>
+        </div>
+
+        <!-- sample input field to provide gender -->
+        <!-- <div class="input-field col s12">
+          <select>
+            <option value="0" disabled selected>Choose your option</option>
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+            <option value="3">Prefer Not to Share</option>
+          </select>
+          <label>Placeholder Label</label>
+        </div> -->
+
+
+        <!-- calorie restrictor slider -->
+        <div id="test-slider"></div>
+
+        <!-- checkbox idea to specify food restrictions/inclusions -->
+        <form action="#" id="preferenceDiv">
+          <p>
+            <label>
+              <input id="checkbox" type="checkbox" />
+              <span>Meat</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input id="checkbox" type="checkbox" />
+              <span>Seafood</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input id="checkbox" type="checkbox" />
+              <span>Dairy</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input id="checkbox" type="checkbox" />
+              <span>Gluten</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input id="checkbox" type="checkbox" />
+              <span>Nuts</span>
+            </label>
+          </p>
+
+        </form>
+
+
+        <div class="progress">
+          <div class="indeterminate"></div>
+        </div>
+
+      </div>
+    </form>
+  </div> 
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
