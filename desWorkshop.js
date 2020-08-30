@@ -44,7 +44,7 @@ var myActivityLevel = ""; // From User Input
 
 // clickevent buttons to push value of letter or num representing three options: 0.sedentary 1.light to moderate, 2.active, or 3.vigorous(athlete or manual laborer) to empty array
 
-function getmyTEE(BMR) {
+function getCalories(BMR) {
 
     if (myActivityLevel == 0) {
         BMR * 1.3;
@@ -60,16 +60,16 @@ function getmyTEE(BMR) {
     }
 }
 
-var myTEE = getmyTEE(myBMR);
+var myCaloricIntake = getCalories(myBMR);
 
-var myCalories
+
 
 
 // Maintain Calorie Range
-var calorieRange1 = 0; // Number from calculated factors
-var calorieRange2 = 0; // Number from calculated factors
+var calorieRange1 = parseInt(myCaloricIntake * .2); 
+var calorieRange2 = parseInt(myCaloricIntake * .3); 
 
-var calorieRangeFULL = calorieRange1 + calorieRange2;
+// var calorieRangeFULL = calorieRange1 + calorieRange2;
 
 
 
@@ -82,7 +82,7 @@ var apiKey = "&app_key=fa1417bd0cb262ef6b1af85af54b21db"
 
 var whichMeal = "";
 
-var queryURL = apiURL + whichMeal + apiID + apiKey + "&from=0&to=10" + "calories=" + calorieRangeFULL;
+var queryURL = apiURL + whichMeal + apiID + apiKey + "&from=0&to=10" + "calories=" + calorieRange1 + "-" + calorieRange2;
 
 $("button").click(function(){
     $.ajax({url: queryURL, method: "GET" success: function(result){
