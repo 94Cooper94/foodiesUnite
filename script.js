@@ -21,80 +21,48 @@ $ajax({
 /////////////////////////////////////////////////////////////////////
 // coop's section
 // 
-var $ctrl = $(document.createElement("input")).attr({
-  id: 'alcohol-free'
- ,name: 'alcohol-free'
- ,value: '0'
- ,text : 'Alcohol-free'
- ,type: 'checkbox'
- ,checked: true
-})
-var $ctrl = $(document.createElement("input")).attr({
-  id: 'celery-free'
- ,name: 'celery-free'
- ,value: '1'
- ,text : 'Celery-free'
- ,type: 'checkbox'
- ,checked: true
-})
-var $ctrl = $(document.createElement("input")).attr({
-  id: 'crustacean-free'
- ,name: 'crustacean-free'
- ,value: '2'
- ,text : 'Crustacean-free'
- ,type: 'checkbox'
- ,checked: true
-})
-var $ctrl = $(document.createElement("input")).attr({
-  id: 'crustacean-free'
- ,name: 'crustacean-free'
- ,value: '2'
- ,text : 'Crustacean-free'
- ,type: 'checkbox'
- ,checked: true
-})
-var $ctrl = $(document.createElement("input")).attr({
-  id: 'crustacean-free'
- ,name: 'crustacean-free'
- ,value: '2'
- ,text : 'Crustacean-free'
- ,type: 'checkbox'
- ,checked: true
-})
-var $ctrl = $(document.createElement("input")).attr({
-  id: 'crustacean-free'
- ,name: 'crustacean-free'
- ,value: '2'
- ,text : 'Crustacean-free'
- ,type: 'checkbox'
- ,checked: true
-})
-var $ctrl = $(document.createElement("input")).attr({
-  id: 'crustacean-free'
- ,name: 'crustacean-free'
- ,value: '2'
- ,text : 'Crustacean-free'
- ,type: 'checkbox'
- ,checked: true
-})
-v
-var $ctrl = $(document.createElement("input")).attr({
-  id: 'crustacean-free'
- ,name: 'crustacean-free'
- ,value: '2'
- ,text : 'Crustacean-free'
- ,type: 'checkbox'
- ,checked: true
-})
-var $ctrl = $(document.createElement("input")).attr({
-  id: 'crustacean-free'
- ,name: 'crustacean-free'
- ,value: '2'
- ,text : 'Crustacean-free'
- ,type: 'checkbox'
- ,checked: true
-})
+$("#preferenceDiv").append(dairyFree, glutenFree, pescatarian, vegan, vegetarian)
 
+var dairyFree = $(document.createElement("input")).attr({
+  id: 'dairy-free'
+ ,name: 'dairy-free'
+ ,value: '2'
+ ,text : 'Dairy-free'
+ ,type: 'checkbox'
+ ,checked: true
+})
+var glutenFree = $(document.createElement("input")).attr({
+  id: 'gluten-free'
+ ,name: 'gluten-free'
+ ,value: '2'
+ ,text : 'Gluten-free'
+ ,type: 'checkbox'
+ ,checked: true
+})
+var pescatarian	 = $(document.createElement("input")).attr({
+  id: 'pescatarian'
+ ,name: 'pescatarian'
+ ,value: '2'
+ ,text : 'Pescatarian'
+ ,type: 'checkbox'
+ ,checked: true
+})
+var vegan = $(document.createElement("input")).attr({
+  id: 'vegan'
+ ,name: 'vegan'
+ ,value: '2'
+ ,text : 'Vegan'
+ ,type: 'checkbox'
+ ,checked: true
+})
+var vegetarian = $(document.createElement("input")).attr({
+  id: 'vegetarian'
+ ,name: 'vegetarian'
+ ,value: '2'
+ ,text : 'Vegetarian'
+ ,type: 'checkbox'
+ ,checked: true
+})
 
 
 // initializes the gender select input field
