@@ -1,165 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Foodies Unite</title>
-  <!-- Compiled and minified CSS -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Source+Code+Pro:wght@500&display=swap"
-    rel="stylesheet" />
-  <!-- stylesheets -->
-  <link rel="stylesheet" type="text/css" href="reset.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Parallax Template - Materialize</title>
+
+  <!-- CSS  -->  
+  <link href="css/reset.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
 </head>
-
 <body>
-
   <nav>
     <div class="nav-wrapper">
-      <a href="index.html" class="brand-logo"><i class="fas fa-cheese"></i></a>
+      <!-- simple "brand" icon that navigates user to homepage -->
+      <a href="index.html" class="brand-logo"><i class="material-icons">cake</i></a>
     </div>
   </nav>
 
 
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-2">calorie counting made fun</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">want delicious meal suggestions while also being mindful of your caloric intake? look no further</h5>
+        </div>
+        <div class="row center">
+          <a href="index.html" id="start-meal-ideas" class="btn-large waves-effect waves-light teal lighten-1">meal ideas</a>
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="media/brusselsSprouts.jpg" alt="Brussels Sprouts"></div>
+  </div>
+
+
+
+
   <div class="container">
-    <div class="row">
-      <div class="col">
-        <div class="card horizontal">
-          <div class="card-stacked">
-            <div class="card-content">
-              <img src="media/loseWeight.PNG">
-            </div>
-            <div class="card-action">
-              <a href="#">Weight Loss</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card horizontal">
-          <div class="card-stacked">
-            <div class="card-content">
-              <img src="media/maintainWeight.PNG">
-            </div>
-            <div class="card-action">
-              <a href="#">Meal Ideas</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card horizontal">
-          <div class="card-stacked">
-            <div class="card-content">
-              <img src="media/gainWeight.png">
-            </div>
-            <div class="card-action">
-              <a href="#">Weight Gain</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+    <div class="section">
 
-  <!-- sample loading bar for while information is being pulled -->
-  <div class="progress">
-    <div class="indeterminate"></div>
-  </div>
-
-
-  <!-- Modal Trigger -->
-  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
-
-  <!-- Modal Structure -->
-  <div id="modal1" class="modal modal-fixed-footer">
-    <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
-    </div>
-  </div>
-
-
-  <div class="row">
-    <form class="col s12">
+      <!--   Icon Section   -->
       <div class="row">
-        <div class="input-field col s6">
-          <input id="height" type="text" class="validate" placeholder="Height">
-          <label for="height"></label>
-        </div>
-        <div class="input-field col s6">
-          <input id="weight" type="text" class="validate" placeholder="Weight">
-          <label for="weight"></label>
-        </div>
-        <div class="row">
-          <div class="input-field col s12">
-            <input id="BMI" type="text" class="validate" placeholder="BMI">
-            <label for="BMI"></label>
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">child_care</i></h2>
+            <h5 class="center">easy</h5>
+
+            <p class="light">so easy a baby could use it! utilize our super easy to navigate interface to get health-minded meal suggestions with a few simple clicks!</p>
           </div>
         </div>
 
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">money_off</i></h2>
+            <h5 class="center">free</h5>
 
-        <!-- calorie restrictor slider -->
-        <div id="test-slider"></div>
+            <p class="light">we made the functions, we compiled the recipes, but best of all, we did it all for free. you'll come crawling back for more like a desperate ex.</p>
+          </div>
+        </div>
 
-        <!-- checkbox idea to specify food restrictions/inclusions -->
-        <form action="#" id="preferenceDiv">
-          <p>
-            <label>
-              <input id="checkbox" type="checkbox" />
-              <span>Meat</span>
-            </label>
-          </p>
-          <p>
-            <label>
-              <input id="checkbox" type="checkbox" />
-              <span>Seafood</span>
-            </label>
-          </p>
-          <p>
-            <label>
-              <input id="checkbox" type="checkbox" />
-              <span>Dairy</span>
-            </label>
-          </p>
-          <p>
-            <label>
-              <input id="checkbox" type="checkbox" />
-              <span>Gluten</span>
-            </label>
-          </p>
-          <p>
-            <label>
-              <input id="checkbox" type="checkbox" />
-              <span>Nuts</span>
-            </label>
-          </p>
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">loop</i></h2>
+            <h5 class="center">accessible</h5>
 
-        </form>
-
-
-        <div class="input-field col s12">
-          <select>
-            <option value="0" disabled selected>Choose your option</option>
-            <option value="1">Male</option>
-            <option value="2">Female</option>
-            <option value="3">Prefer Not to Share</option>
-          </select>
-          <label>Placeholder Label</label>
+            <p class="light">found some meals you love and now you're looking for something new? our collection is recipes is always updating-- the good doesn't stop giving!</p>
+          </div>
         </div>
       </div>
-    </form>
+
+    </div>
   </div>
 
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="script.js"></script>
-</body>
 
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-2">user details</h1>
+        
+        <div class="row">          
+          
+          <div class="col s2">
+            <ul id="gender-div" class="dropdown-content">
+              <li><a id="female" href="#!">female</a></li>
+              <li><a id="male" href="#!">male</a></li>
+              <li><a id="other" href="#!">no comment</a></li>
+            </ul>
+            <a class="btn dropdown-trigger" href="#!" data-target="gender-div">gender<i class="material-icons right">arrow_drop_down</i></a>
+          </div>
+
+          <div class="col s2">
+            <ul id="metabolicDiv" class="dropdown-content">
+              <li><a id="notActive" href="#!">sedentary</a></li>
+              <li><a id="prettyActive" href="#!">moderately active</a></li>
+              <li><a id="veryActive" href="#!">very active</a></li>
+            </ul>
+            <a class="btn dropdown-trigger" href="#!" data-target="metabolicDiv">metabolic rate<i class="material-icons right">arrow_drop_down</i></a>
+          </div>
+
+          <div class="input-field col s8">
+            <input id="age" type="text" class="validate" placeholder="age">
+            <label for="age"></label>
+          </div>
+        </div>
+
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s4">
+                <input id="feet-form" type="text" class="validate" placeholder="feet">
+                <label for="height"></label>
+              </div>
+              <div class="input-field col s4">
+                <input id="inche-form" type="text" class="validate" placeholder="inches">
+                <label for="height"></label>
+              </div>
+              <div class="input-field col s4">
+                <input id="weight" type="text" class="validate" placeholder="weight">
+                <label for="weight"></label>
+              </div>
+            </div>
+          </form>
+        </div>
+
+       
+
+        <div class="row center">
+          <a href="index.html" id="submit-button" class="btn-large waves-effect waves-light teal lighten-1">submit</a>
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="media/pearCrisps.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+
+
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>meal ideas</h4>
+        </div>
+
+        <div id="bfastDiv" class="col s4 center">
+          breakfast options:
+          <div class="row center">
+            <a id="addBfast" class="btn-large waves-effect waves-light red lighten-1">add breakfast meal</a>
+          </div>
+        </div>
+        <div id="lunchDiv" class="col s4 center">
+          lunch options:
+          <div class="row center">
+            <a id="addLunch" class="btn-large waves-effect waves-light yellow lighten-1">add lunch meal</a>
+          </div>
+        </div>
+        <div id="dinnerDiv" class="col s4 center">
+          dinner options:
+          <div class="row center">
+            <a id="addDinner" class="btn-large waves-effect waves-light green lighten-1">add dinner meal</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">now that's a happy booty</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="media/grilledLamb.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">external resources</h5>
+          <ul>
+            <li><a class="black-text" href="https://www.bodybuilding.com">bodybuilding: </a>focused body sculpting</li>
+            <li><a class="black-text" href="https://www.myfitnesspal.com/">myfitnesspal: </a>committed to overall health</li>
+            <li><a class="black-text" href="https://www.weightwatchers.com/us/">weightwatchers: </a>watch what you eat!</li>
+            <li><a class="black-text" href="https://www.edamam.com/wizard/free/">edamam nutrition analysis: </a>know the exact numbers</li>
+          </ul>
+        </div>
+        <div class="col l6 s12">
+          <h5 class="white-text">meet the developers</h5>
+          <ul>
+            <li><a class="black-text" href="https://github.com/94Cooper94">Cooper: </a>github & layout manager</li>
+            <li><a class="black-text" href="https://github.com/DesmondAldridge">Desmond: </a>javascript mastermind</li>
+            <li><a class="black-text" href="https://github.com/Athorpe96">Austin: </a>man with a million ideas</li>
+            <li><a class="black-text" href="https://github.com/justinpricer">Justin: </a>sex appeal</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!--  -->
+    <div class="footer-copyright">
+      <div class="container">
+      made /in part/ by <a class="brown-text text-lighten-3" href="http://materializecss.com">materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
 </html>
