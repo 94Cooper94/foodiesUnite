@@ -132,15 +132,15 @@ $("#checkbox").on("click", function (boxVal) {
 
 //for the BMI api
 
-function bmi(event) {
-  event.preventDefault();
-}
-
-
-var ageNumber = $('input#age').val();
-var heightNumber = $('input#height').val();
-var weightNumber = $('input#weight').val();
-
+$('#form').submit(function (num) {
+  num.preventDefault();
+  var heightNumber = $("#height").val();
+  var weightNumber = $('#weight').val();
+  var ageNumber = $('#age').val();
+  console.log(weightNumber);
+  console.log(heightNumber);
+  console.log(ageNumber);
+});
 
 var settings = {
   "async": true,
@@ -156,9 +156,17 @@ var settings = {
 $.ajax(settings).done(function (response) {
   console.log(response.bmi)
   console.log(response.health)
+  var bmiAnswers = show(response);
+
+  $('#showBmi').html(bmiAnswers);
+
+
 
 });
-$('#form2').submit(bmi)
+
+function show(response) {
+  return response.bmi + response.health
+}
 //
 // https://www.programmableweb.com/news/10-most-popular-food-apis/brief/2019/08/06
 //
