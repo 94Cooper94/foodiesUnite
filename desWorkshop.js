@@ -1,11 +1,13 @@
 
 let myGender= ""; // From User Input
-let myHeightFt= 0; // From User Input
-let myHeightIn= 0; // From User Input
-let myWeight= 0; // From User Input
-let myAge = 0; // From User Input
+console.log(myGender);
+let myHeightFt= []; // From User Input
+let myHeightIn= []; // From User Input
+let myWeight= []; // From User Input
+let myAge = []; // From User Input
 
 var convertFeetToInches = myHeightFt / 12;
+console.log(convertFeetToInches);
 var heightFull = convertFeetToInches + myHeightIn;
 // var genderLetter = myGender.string.charAt(0).toLowercase(); // Change this, no typing, just selection
 
@@ -21,6 +23,7 @@ function getBMR(gender) {
 }
 
 var myBMR = getBMR(myGender);
+console.log(myBMR)
 
 var myActivityLevel = ""; // From User Input
 
@@ -43,16 +46,15 @@ function getCalories(BMR) {
 }
 
 var myCaloricIntake = getCalories(myBMR);
-
+console.log(myCaloricIntake);
 
 // Maintain Calorie Range
 var calorieRange1 = Math.round(myCaloricIntake * .2); 
 var calorieRange2 = Math.round(myCaloricIntake * .3); 
+console.log(calorieRange1);
 
 var calorieRangeFULL = "calories=" + calorieRange1 + "-" + calorieRange2;
-
-
-
+console.log(calorieRangeFull)
 // AJAX Call
 // FULL url "https://api.edamam.com/search?q=chicken&app_id=${YOUR_APP_ID}&app_key=${YOUR_APP_KEY}&from=0&to={3 OR LAST INDEX OF YOUR CHOICE}calories={591-722 CALORIE RANGE PER CATEGORY} {&health=alcohol-free}"
 
@@ -65,33 +67,39 @@ var whichMeal = "";
 
 var queryURL = apiURL + whichMeal + apiID + apiKey + resultAmount + calorieRangeFULL;
 
-$("button").click(function(){
+$("#get-meal").click(function(){
     $.ajax({url: queryURL, method: "GET", success: function(result){
-      $("#div1").html(result);
+        console.log(result);
+    //   $("#div1").html(result);
     }});
 });
 
 
   // Height Selection
-  // Utilizing a new click event method for submit buttons within html forms
-  // The target needs to be the form id, not the input id
-
   var myFeet = $("#feet-input").value;
   var myInches = $("#inches-input").value;
- 
 
+  // Utilizing a new click event method for submit buttons within html forms
+  // The target needs to be the form id, not the input id
+ 
   // Feet
   $("#feet-form").submit(function(event) {
     myHeightFt.push(myFeet);
     event.preventDefault();
   });
-
   // Inches
   $("#inches-form").submit(function(event) {
     myHeightIn.push(myInches);
     event.preventDefault();
   });
 
+  // Weight Selection
+  var weightInput = $("#weight-input").value;
+
+  $("#weight-form").submit(function(event) {
+    myWeight.push(weightInput);
+    event.preventDefault();
+  });
 
   // Gender Selection
   $("#maleBTN").click(function(event) {
@@ -108,20 +116,26 @@ $("button").click(function(){
 
     });
 
-    //var pastSearches = [];
+  // Meal Selection
+  $("#breakfastBTN").click(function(event) {
+    event.preventDefault();
+    
+     whichMeal.push("breakfast");
 
-// City Search
-// $("#select-city").click(function(event) {
-//     event.preventDefault();
-  
-//     var inputCity = $("#city-input").val().trim().toUpperCase();
-//     searchWeather(inputCity);
-  
-//     if (pastSearches.indexOf(inputCity) === -1) {
-//       pastSearches.push(inputCity);
-//     }
-  
-//     renderButtons();
-  
-  
-//   });
+    });
+
+  $("#lunchBTN").click(function(event) {
+    event.preventDefault();
+        
+      whichMeal.push("breakfast");
+    
+    });
+
+  $("#dinnerBTN").click(function(event) {
+    event.preventDefault();
+        
+      whichMeal.push("breakfast");
+    
+     });      
+
+
