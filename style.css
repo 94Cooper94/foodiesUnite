@@ -6,7 +6,7 @@ body {
 }
 .row {
     width: stretch;
-    justify-items: center;
+    justify-content: center;
 }
 .col {
     max-width: 30%;
