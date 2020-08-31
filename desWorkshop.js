@@ -6,8 +6,10 @@ var searchKeyword = ""
 
 var queryURL = apiURL + searchKeyword + apiID + apiKey
 
-$("button").click(function(){
-    $.ajax({url: queryURL, method: "GET" success: function(result){
+$("button").click(function () {
+  $.ajax({
+    url: queryURL, method: "GET" success: function (result) {
       $("#div1").html(result);
-    }});
+    }
   });
+});

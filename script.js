@@ -25,43 +25,43 @@ $("#preferenceDiv").append(dairyFree, glutenFree, pescatarian, vegan, vegetarian
 
 var dairyFree = $(document.createElement("input")).attr({
   id: 'dairy-free'
- ,name: 'dairy-free'
- ,value: '2'
- ,text : 'Dairy-free'
- ,type: 'checkbox'
- ,checked: true
+  , name: 'dairy-free'
+  , value: '2'
+  , text: 'Dairy-free'
+  , type: 'checkbox'
+  , checked: true
 })
 var glutenFree = $(document.createElement("input")).attr({
   id: 'gluten-free'
- ,name: 'gluten-free'
- ,value: '2'
- ,text : 'Gluten-free'
- ,type: 'checkbox'
- ,checked: true
+  , name: 'gluten-free'
+  , value: '2'
+  , text: 'Gluten-free'
+  , type: 'checkbox'
+  , checked: true
 })
-var pescatarian	 = $(document.createElement("input")).attr({
+var pescatarian = $(document.createElement("input")).attr({
   id: 'pescatarian'
- ,name: 'pescatarian'
- ,value: '2'
- ,text : 'Pescatarian'
- ,type: 'checkbox'
- ,checked: true
+  , name: 'pescatarian'
+  , value: '2'
+  , text: 'Pescatarian'
+  , type: 'checkbox'
+  , checked: true
 })
 var vegan = $(document.createElement("input")).attr({
   id: 'vegan'
- ,name: 'vegan'
- ,value: '2'
- ,text : 'Vegan'
- ,type: 'checkbox'
- ,checked: true
+  , name: 'vegan'
+  , value: '2'
+  , text: 'Vegan'
+  , type: 'checkbox'
+  , checked: true
 })
 var vegetarian = $(document.createElement("input")).attr({
   id: 'vegetarian'
- ,name: 'vegetarian'
- ,value: '2'
- ,text : 'Vegetarian'
- ,type: 'checkbox'
- ,checked: true
+  , name: 'vegetarian'
+  , value: '2'
+  , text: 'Vegetarian'
+  , type: 'checkbox'
+  , checked: true
 })
 
 
@@ -152,6 +152,8 @@ var settings = {
 
 $.ajax(settings).done(function (response) {
   console.log(response);
+  console.log(response.bmi); //gets bmi
+  console.log(response.health); //tells you the health
 });
 //
 // https://www.programmableweb.com/news/10-most-popular-food-apis/brief/2019/08/06
