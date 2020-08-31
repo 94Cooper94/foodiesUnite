@@ -164,10 +164,17 @@ $("#checkbox").on("click", function (boxVal) {
 
 //for the BMI api
 
+var ageNumber = 20
+var heightNumber = 180
+var weightNumber = 180 / 2.205
+
+
+
+
 var settings = {
   "async": true,
   "crossDomain": true,
-  "url": "https://fitness-calculator.p.rapidapi.com/bmi?age=25&height=180&weight=65",
+  "url": "https://fitness-calculator.p.rapidapi.com/bmi?age=" + ageNumber + "&height=" + heightNumber + "&weight=" + weightNumber,
   "method": "GET",
   "headers": {
     "x-rapidapi-host": "fitness-calculator.p.rapidapi.com",
