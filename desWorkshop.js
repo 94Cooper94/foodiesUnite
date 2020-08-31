@@ -32,16 +32,16 @@ var myActivityLevel = ""; // From User Input
 
 function getCalories(BMR) {
 
-    if (myActivityLevel == 0) {
+    if (myActivityLevel == "s") {
         BMR * 1.3;
     }
-    if (myActivityLevel == 1) {
+    if (myActivityLevel == "l") {
         BMR * 1.53;
     }
-    if (myActivityLevel == 2) {
+    if (myActivityLevel == "a") {
         BMR * 1.76;
     }
-    if (myActivityLevel == 3) {
+    if (myActivityLevel == "v") {
         BMR * 2.25;
     }
 }
@@ -66,7 +66,7 @@ var apiID = "&app_id=d88e78b8";
 var apiKey = "&app_key=fa1417bd0cb262ef6b1af85af54b21db";
 var resultAmount = "&from=0&to=10"; // This will show 10 
 
-var whichMeal = "";
+// var whichMeal = "";
 
 var queryURL = apiURL + whichMeal + apiID + apiKey + resultAmount + "calories=591-722";
 
