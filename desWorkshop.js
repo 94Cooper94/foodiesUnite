@@ -11,6 +11,15 @@ console.log(convertFeetToInches);
 var heightFull = convertFeetToInches + myHeightIn;
 // var genderLetter = myGender.string.charAt(0).toLowercase(); // Change this, no typing, just selection
 
+
+$("button").click(function () {
+  $.ajax({
+    url: queryURL, method: "GET" success: function (result) {
+      $("#div1").html(result);
+    }
+  });
+});
+
 function getBMR(gender) {
     if (gender == "m") {
         
@@ -136,6 +145,4 @@ $("#get-meal").click(function(){
         
       whichMeal.push("breakfast");
     
-     });      
-
-
+     });
