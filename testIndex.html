@@ -25,14 +25,14 @@
 
 <body>
 
-<!-- Height -->
-<div id="height-div" class="card">
+<!-- Height & Weight Div -->
+<div id="height-and-weight-div" class="card">
 
     <span>Height</span>
 
     <form id="feet-form">
         <label for="feet-input">FEET</label>
-        <input type="number" id="feet-input"><br>
+        <input type="text" id="feet-input"><br>
         <input id="select-feet" type="submit" value="Submit!">
     </form>
 
@@ -44,26 +44,37 @@
     
     <form id="weight-form">
         <label for="weight-input">WEIGHT</label>
-        <input type="number" id="weight-input" min="90" max="400"><br>
+        <input type="text" id="weight-input" min="90" max="400"><br>
         <input id="select-weight" type="submit" value="Submit!">
     </form> 
 
 </div>
 
-<!-- Assigned Gender -->
-<div id="gender-div" class="card">
+<!-- Age & Gender Div-->
 
-    <span>My Assigned Gender & Age</span>
+<div id="age-and-gender-div" class="card">
+
+    <form id="age-form">
+    <label for="age-input">AGE</label>
+    <input type="text" id="age-input" min="18" max="99"><br>
+    <input id="select-weight" type="submit" value="Submit!">
+    </form> 
+
+    <span>My Assigned Gender</span>
+
     <button id="maleBTN">MALE</button>
     <button id="femaleBTN">FEMALE</button>
 
-    <form id="age-form">
-        <label for="age-input">AGE</label>
-        <input type="number" id="age-input" min="18" max="99"><br>
-        <input id="select-weight" type="submit" value="Submit!">
-    </form> 
+    </div>
 
 </div>
+
+<div id="activity-level-div" class="card"></div>
+<span>Please select which meal of the day...</span>
+<button id="sedentaryBTN">LITTLE TO NO EXERCISE</button>
+<button id="lightBTN">LIGHT TO MODERATE EXERCISE</button>
+<button id="activeBTN">ACTIVE EXERCISE</button>
+<button id="vigorousBTN">VIGOROUS *Professional athlete or manual laborer</button>
 
 <!-- Select Which Meal of the Day -->
 
@@ -81,6 +92,6 @@
 
 <!-- SCRIPT -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="desWorkshop.js"></script>
+<script src="testScript.js"></script>
 </body>
 </html>
