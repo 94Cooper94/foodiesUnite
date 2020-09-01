@@ -8,11 +8,12 @@ Build our first app using an API. Retrieve data from a third-party meal plan API
 # Functionality
 Build a dashboard application with input functionality to find meal plans for multiple body type goals.
 
-# Deployed site: https://94cooper94.github.io/foodiesUnite/
+# Deployed site: 
+https://94cooper94.github.io/foodiesUnite/
 
 
-# App Demo
-Deployed site: https://94cooper94.github.io/foodiesUnite/
-
-
-Initial commit for team-developed food-focused menu conjuring app.
+### Technologies Used 
+- JavaScript
+- Edamam API
+- HTML
+- CSS
