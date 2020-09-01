@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////////////
 // deezmond's section
-// 
+$('.dropdown-trigger').dropdown();
 //x
 //var searchTerm = ""
 // var app_id = "d88e78b8";
@@ -96,9 +96,6 @@
 // austin's section
 
 //for the BMI api
-$('.dropdown-trigger').dropdown();
-
-
 // $('#form').submit(function (num) {
 //   num.preventDefault();
 //   var heightNumber = $("#height").val();

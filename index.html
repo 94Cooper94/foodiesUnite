@@ -26,12 +26,12 @@
     <div class="section no-pad-bot">
       <div class="container">
         <br><br>
-        <h1 class="header center text-lighten-2">calorie counting made fun</h1>
+        <h1 class="header center text-lighten-2">everyday i'm brusselin'</h1>
         <div class="row center">
-          <h5 class="header col s12 light">want delicious meal suggestions while also being mindful of your caloric intake? look no further</h5>
+          <h5 class="header col s12 light">calorie counting made fun</h5>
         </div>
         <div class="row center">
-          <a href="index.html" id="start-meal-ideas" class="btn-large waves-effect waves-light teal lighten-1">meal ideas</a>
+          <a href="#userDetails" id="start-meal-ideas" class="btn-large waves-effect waves-light teal lighten-1">get started</a>
         </div>
         <br><br>
 
@@ -44,95 +44,56 @@
 
 
   <div class="container">
-    <div class="section">
-
-      <!--   Icon Section   -->
-      <div class="row" style="color: black;">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons" style="color: black;">child_care</i></h2>
-            <h5 class="center" style="color: black;">easy</h5>
-
-            <p class="light" style="color: black;">so easy a baby could use it! utilize our super easy to navigate interface to get health-minded meal suggestions with a few simple clicks!</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons" style="color: black;">money_off</i></h2>
-            <h5 class="center" style="color: black;">free</h5>
-
-            <p class="light" style="color: black;">we made the functions, we compiled the recipes, but best of all, we did it all for free. you'll come crawling back for more like a desperate ex-lover</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons" style="color: black;">loop</i></h2>
-            <h5 class="center" style="color: black;">up-to-date</h5>
-
-            <p class="light" style="color: black;">found some meals you love and now you're looking for something new? our collection is recipes is always updating-- the good doesn't stop giving!</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-
-
-  <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
       <div class="container">
         <br><br>
-        <h1 class="header center text-lighten-2">user details</h1>
+        <h1 id="userDetails" class="header center text-lighten-2" style="color: black;">user details</h1>
         
         <div class="row">          
           
-          <div class="col s2">
+          <div class="col l6 s6">
             <ul id="gender-div" class="dropdown-content">
               <li><a class="gender" id="female" href="#!">female</a></li>
               <li><a class="gender" id="male" href="#!">male</a></li>
-              <li><a class="gender" id="other" href="#!">no comment</a></li>
             </ul>
-            <a class="btn dropdown-trigger" href="#!" data-target="gender-div">gender<i class="material-icons right">arrow_drop_down</i></a>
+            <a class="btn dropdown-trigger" href="#!" data-target="gender-div">gender assigned at birth<i class="material-icons right">arrow_drop_down</i></a>
           </div>
 
-          <div class="col s2">
+          <div class="col l6 s6">
             <ul id="metabolicDiv" class="dropdown-content">
               <li><a id="notActive" href="#!">sedentary</a></li>
-              <li><a id="prettyActive" href="#!">moderately active</a></li>
+              <li><a id="prettyActive" href="#!">pretty active</a></li>
               <li><a id="veryActive" href="#!">very active</a></li>
+              <li><a id="extremelyActive" href="#!">extremely active</a></li>
             </ul>
-            <a class="btn dropdown-trigger" href="#!" data-target="metabolicDiv">metabolic rate<i class="material-icons right">arrow_drop_down</i></a>
-          </div>
-
-          <div class="input-field col s8">
-            <input id="age" type="text" class="validate" placeholder="age">
-            <label for="age"></label>
-          </div>
+            <a class="btn dropdown-trigger" href="#!" data-target="metabolicDiv" style="float: right;">metabolic rate<i class="material-icons right">arrow_drop_down</i></a>
+          </div> 
         </div>
 
         <div class="row">
           <form class="col s12">
             <div class="row">
-              <div class="input-field col s4">
-                <input id="feet-form" type="text" class="validate" placeholder="feet">
+              <div class="input-field col s3">
+                <input id="age" type="text" class="validate" placeholder="age" style="color: black;">
+                <label for="age"></label>
+              </div>
+              <div class="input-field col s3">
+                <input id="feet-form" type="text" class="validate" placeholder="feet" style="color: black;">
                 <label for="height"></label>
               </div>
-              <div class="input-field col s4">
-                <input id="inche-form" type="text" class="validate" placeholder="inches">
+              <div class="input-field col s3">
+                <input id="inche-form" type="text" class="validate" placeholder="inches" style="color: black;">
                 <label for="height"></label>
               </div>
-              <div class="input-field col s4">
-                <input id="weight" type="text" class="validate" placeholder="weight">
+              <div class="input-field col s3">
+                <input id="weight" type="text" class="validate" placeholder="weight" style="color: black;">
                 <label for="weight"></label>
               </div>
             </div>
           </form>
         </div>
 
-       
+        
 
         <div class="row center">
           <a href="index.html" id="submit-button" class="btn-large waves-effect waves-light teal lighten-1">submit</a>
@@ -141,6 +102,34 @@
 
       </div>
     </div>
+  </div>
+
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="row">
+      <div class="col s12 center">
+        <h3><i class="mdi-content-send brown-text"></i></h3>
+        <h4>add meals</h4>
+      </div>
+
+      <div id="bfastBtnDiv" class="col l4 m4 s12 center">
+        <div class="row center">
+          <a id="addBfast" class="btn-large waves-effect waves-light teal lighten-1"><i class="material-icons left">free_breakfast</i>breakfast</a>
+        </div>
+      </div>
+      <div id="lunchBtnDiv" class="col l4 m4 s12 center">
+        <div class="row center">
+          <a id="addLunch" class="btn-large waves-effect waves-light teal lighten-1">lunch</a>
+        </div>
+      </div>
+      <div id="dinnerBtnDiv" class="col l4 m4 s12 center">
+        <div class="row center">
+          <a id="addDinner" class="btn-large waves-effect waves-light teal lighten-1"><i class="material-icons right">local_bar</i>dinner</a>
+        </div>
+      </div>
+
+    </div>
     <div class="parallax"><img src="media/pearCrisps.jpg" alt="Pear Crisps"></div>
   </div>
 
@@ -148,29 +137,24 @@
 
   <div class="container">
     <div class="section">
-
-      <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4 style="color: black;">add meals</h4>
+      <div id="bfastMealDiv" class="col l4 m4 s12 center">
+        <div class="row center">
+          <!-- breakfast choices will append here -->
         </div>
-
-        <div id="bfastDiv" class="col s4 center">
-          <div class="row center">
-            <a id="addBfast" class="btn-large waves-effect waves-light teal lighten-1"><i class="material-icons left">free_breakfast</i>breakfast</a>
-          </div>
+      </div>
+    </div>
+    <div class="section">
+      <div id="lunchMealDiv" class="col l4 m4 s12 center">
+        <div class="row center">
+          <!-- lunch choices will append here -->
         </div>
-        <div id="lunchDiv" class="col s4 center">
-          <div class="row center">
-            <a id="addLunch" class="btn-large waves-effect waves-light teal lighten-1">lunch</a>
-          </div>
+      </div>
+    </div>
+    <div class="section">
+      <div id="dinnerMealDiv" class="col l4 m4 s12 center">
+        <div class="row center">
+          <!-- dinner choices will append here -->
         </div>
-        <div id="dinnerDiv" class="col s4 center">
-          <div class="row center">
-            <a id="addDinner" class="btn-large waves-effect waves-light teal lighten-1"><i class="material-icons right">local_bar</i>dinner</a>
-          </div>
-        </div>
-
       </div>
     </div>
   </div>
