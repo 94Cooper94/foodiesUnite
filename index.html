@@ -43,29 +43,28 @@
 
 
 
-  <div class="container">
+  <div class="container" style="background-color:indianred">
     <div class="section no-pad-bot">
       <div class="container">
-        <br><br>
         <div class="row">
           <div class="col s12 center">
             <h3><i class="mdi-content-send brown-text"></i></h3>
             <h3 id="mealInputDiv" style="color: black;">select meal type</h3>
           </div>
-    
+          <br><br>
           <div id="bfastBtnDiv" class="col l4 m4 s12 center">
             <div class="row center">
-              <a id="addBfast" class="btn-large waves-effect waves-light teal lighten-1"><i class="material-icons left">free_breakfast</i>breakfast</a>
+              <a href="#userQuery" id="addBfast" class="btn-large waves-effect waves-light teal lighten-1"><i class="material-icons left">free_breakfast</i>breakfast</a>
             </div>
           </div>
           <div id="lunchBtnDiv" class="col l4 m4 s12 center">
             <div class="row center">
-              <a id="addLunch" class="btn-large waves-effect waves-light teal lighten-1">lunch</a>
+              <a href="#userQuery" id="addLunch" class="btn-large waves-effect waves-light teal lighten-1">lunch</a>
             </div>
           </div>
           <div id="dinnerBtnDiv" class="col l4 m4 s12 center">
             <div class="row center">
-              <a id="addDinner" class="btn-large waves-effect waves-light teal lighten-1"><i class="material-icons right">local_bar</i>dinner</a>
+              <a href="#userQuery" id="addDinner" class="btn-large waves-effect waves-light teal lighten-1"><i class="material-icons right">local_bar</i>dinner</a>
             </div>
           </div>
         </div>
@@ -75,7 +74,7 @@
 
 
 
-  <div class="parallax-container valign-wrapper">
+  <div class="parallax-container valign-wrapper" id="userQuery">
     
     <div class="section no-pad-bot">
       <h3 id="userDetails" class="header center text-lighten-2">user details</h3>
@@ -124,7 +123,7 @@
           </div> 
 
           <div class="center col l12 s4">
-            <a href="index.html" id="submit-button" class="btn-large waves-effect waves-light teal lighten-1">submit</a>
+            <a href="#resultsContainer" id="submit-button" class="btn-large waves-effect waves-light teal lighten-1">submit</a>
           </div>
         </div>
         <br><br>
@@ -135,40 +134,27 @@
 
 
 
-  <div class="container">
+  <div class="container" id="resultsContainer" style="background-color:indianred">
 
     <div class="section">
-      <div class="row">
+      <div class="row center"><h4 style="color: black;">calorie range:</h4>
         <div class="col l4 m4 s4 center">
-          <h1 id="calorieRangeA" style="color: black;"><!-- lower end of calorie range displays here --></h1>
+          
+          <h4 id="calorieRangeA" style="color: black;"><!-- lower end of calorie range displays here --></h4>
         </div>
         <div class="col l4 m4 s4 center">
-          <h1 style="color: black;">-</h1>
+          <h4 style="color: black;">-</h4>
         </div>
         <div class="col l4 m4 s4 center">
-          <h1 id="calorieRangeB" style="color: black;"><!-- upper end of calorie range displays here --></h1>
+          <h4 id="calorieRangeB" style="color: black;"><!-- upper end of calorie range displays here --></h4>
         </div>
       </div>
     </div>
 
     <div class="section">
       <div class="row">
-        <div id="bfastMealDiv" class="col l4 m4 s12 center">
-          <div class="row center">
-            <!-- breakfast choices will append here -->
-          </div>
-        </div>
-    
-        <div id="lunchMealDiv" class="col l4 m4 s12 center">
-          <div class="row center">
-            <!-- lunch choices will append here -->
-          </div>
-        </div>
-      
-        <div id="dinnerMealDiv" class="col l4 m4 s12 center">
-          <div class="row center">
-            <!-- dinner choices will append here -->
-          </div>
+        <div id="mealDiv" class="col s12 m12 l12 center">
+          <!-- meals based on user's selection go here -->
         </div>
       </div>
     </div>
