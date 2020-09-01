@@ -52,10 +52,10 @@ function getCalories(BMR) {
     }
 }
 
-// // To make our fancy Materialize dropdown work
-// //////////////////////////////////
-// $('.dropdown-trigger').dropdown();
-// //////////////////////////////////
+// To make our fancy Materialize dropdown work
+//////////////////////////////////
+$('.dropdown-trigger').dropdown();
+//////////////////////////////////
 
 // Gender Selection
 $("#maleBTN").click(function(event) {
