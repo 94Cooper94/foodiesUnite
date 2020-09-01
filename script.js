@@ -167,6 +167,12 @@ $.ajax(settings).done(function (response) {
 function show(response) {
   return response.bmi + response.health
 }
+$('#genderOptions').submit(function (e) {
+  e.preventDefault();
+  var gender = $('select#gender').val();
+  console.log(gender);
+});
+
 //
 // https://www.programmableweb.com/news/10-most-popular-food-apis/brief/2019/08/06
 //
