@@ -5,6 +5,9 @@
  *
  * Made By MaterializeCSS.com
  */
+* {
+  color: white;
+}
 
 nav ul a,
 nav .brand-logo {

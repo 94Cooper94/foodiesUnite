@@ -97,6 +97,13 @@
 
 //for the BMI api
 
+
+$('#genderOptions').on("click", function (e) {
+e.preventDefault();
+var gender = $('select#gender').val();
+console.log(gender);
+});
+
 // $('#form').submit(function (num) {
 //   num.preventDefault();
 //   var heightNumber = $("#height").val();
