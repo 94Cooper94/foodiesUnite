@@ -6,8 +6,51 @@ var myWeight= [];
 var myAge = [];
 var whichMeal = [""];
 var myActivityLevel = [""];
+var myBMR = [];
+var myCaloricIntake = [];
 
-console.log("Defined globally: ", myGender, myHeightFt, myHeightIn, myWeight, myAge);
+
+function getBMR(gender) {
+
+    var heightFull = parseInt(myHeightFt) + parseInt(myHeightIn);
+    var bmrFemale = 655 + (4.35 * myWeight) + (4.7 * heightFull) - (4.7 * myAge);
+    var bmrMale = 66 + (6.2 * myWeight) + (12.7 * heightFull) - (6.76 * myAge);
+
+    myBMR.length = 0;
+
+    if (gender == "f") {
+        myBMR.unshift(bmrFemale);
+    }
+    if (gender == "m") {
+        myBMR.unshift(bmrMale);
+    }
+
+    console.log(heightFull);
+    console.log(myBMR);
+}
+
+function getCalories(BMR) {
+
+    var sedentaryCal = BMR * 1.3;
+    var lightCal = BMR * 1.53;
+    var activeCal = BMR * 1.76;
+    var vigorousCal = BMR * 2.25
+
+    myCaloricIntake.length = 0;
+
+    if (myActivityLevel == "s") {
+        BMR * 1.3;
+    }
+    if (myActivityLevel == "l") {
+        BMR * 1.53;
+    }
+    if (myActivityLevel == "a") {
+        BMR * 1.76;
+    }
+    if (myActivityLevel == "v") {
+        BMR * 2.25;
+    }
+}
 
 
 // Gender Selection
@@ -142,44 +185,6 @@ $("#vigorousBTN").click(function(event) {
     console.log(myActivityLevel);
 });
 
-
-// Processing the User Input
-function getBMR(gender) {
-
-    // var feetToInches = myHeightFt / 12;
-    // console.log(feetToInches)
-    var heightFull = parseInt(myHeightFt + myHeightIn);
-    console.log(heightFull)
-
-    if (gender == "m") {
-        
-        66 + (6.2 * myWeight) + (12.7 * heightFull) - (6.76 * myAge);
-    }
-    if (gender == "f") {
-        
-        655 + (4.35 * myWeight) + (4.7 * heightFull) - (4.7 * myAge);
-    }
-
-}
-
-function getCalories(BMR) {
-
-    myBMR = 
-    if (myActivityLevel == "s") {
-        BMR * 1.3;
-    }
-    if (myActivityLevel == "l") {
-        BMR * 1.53;
-    }
-    if (myActivityLevel == "a") {
-        BMR * 1.76;
-    }
-    if (myActivityLevel == "v") {
-        BMR * 2.25;
-    }
-}
-
-
 // // Producing Calorie Range
 // var calorieRange1 = Math.round(myCaloricIntake * .2); 
 // var calorieRange2 = Math.round(myCaloricIntake * .3); 
@@ -197,12 +202,30 @@ function getCalories(BMR) {
 
 // var queryURL = apiURL + whichMeal + apiID + apiKey + resultAmount + calorieRangeFULL;
 
-$("#get-meal").click(function(){
-    
-    var myBMR = getBMR(myGender);
-    console.log(myBMR)
+    // Processing the User Input
+    // function getBMR(gender) {
+        
+    //     // var feetToInches = myHeightFt / 12;
+    //     // console.log(feetToInches)
+    //     // var heightFull = parseInt(myHeightFt + myHeightIn);
+        
+    //     if (gender == "m") {
+            
+    //         // 66 + (6.2 * myWeight) + (12.7 * heightFull) - (6.76 * myAge);
+    //     }
+    //     if (gender == "f") {
+            
+    //         // 655 + (4.35 * myWeight) + (4.7 * heightFull) - (4.7 * myAge);
+    //     }
+    // }
 
-    var myCaloricIntake = getCalories(myBMR);
+
+$("#get-meal").click(function(){
+
+    getBMR(myGender);
+    getCalories(myBMR);
+
+    console.log(myBMR);
     console.log(myCaloricIntake);
 
     // Producing Calorie Range
