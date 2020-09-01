@@ -39,16 +39,16 @@ function getCalories(BMR) {
     myCaloricIntake.length = 0;
 
     if (myActivityLevel == "s") {
-        BMR * 1.3;
+        myCaloricIntake.unshift(sedentaryCal);
     }
     if (myActivityLevel == "l") {
-        BMR * 1.53;
+        myCaloricIntake.unshift(lightCal);
     }
     if (myActivityLevel == "a") {
-        BMR * 1.76;
+        myCaloricIntake.unshift(activeCal);
     }
     if (myActivityLevel == "v") {
-        BMR * 2.25;
+        myCaloricIntake.unshift(vigorousCal);
     }
 }
 
@@ -234,7 +234,7 @@ $("#get-meal").click(function(){
     console.log(calorieRange1);
     console.log(calorieRange2);
 
-    calorieRangeFULL= "calories=" + calorieRange1 + "-" + calorieRange2;
+    calorieRangeFULL= "&calories=" + calorieRange1 + "-" + calorieRange2;
     console.log(calorieRangeFULL);
 
     // AJAX Call
