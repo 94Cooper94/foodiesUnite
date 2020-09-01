@@ -17,3 +17,9 @@ https://94cooper94.github.io/foodiesUnite/
 - Edamam API
 - HTML
 - CSS
+
+### Contributors
+- Cooper Ahearn
+- Desmond Aldridge
+- Austin Thorpe
+- Justin Pricer
