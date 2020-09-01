@@ -185,41 +185,6 @@ $("#vigorousBTN").click(function(event) {
     console.log(myActivityLevel);
 });
 
-// // Producing Calorie Range
-// var calorieRange1 = Math.round(myCaloricIntake * .2); 
-// var calorieRange2 = Math.round(myCaloricIntake * .3); 
-// console.log(calorieRange1);
-// console.log(calorieRange2);
-
-// calorieRangeFULL= "calories=" + calorieRange1 + "-" + calorieRange2;
-// console.log(calorieRangeFULL);
-
-// // AJAX Call
-// var apiURL = "https://api.edamam.com/search?q=";
-// var apiID = "&app_id=d88e78b8";
-// var apiKey = "&app_key=fa1417bd0cb262ef6b1af85af54b21db";
-// var resultAmount = "&from=0&to=10"; // This will show 10 
-
-// var queryURL = apiURL + whichMeal + apiID + apiKey + resultAmount + calorieRangeFULL;
-
-    // Processing the User Input
-    // function getBMR(gender) {
-        
-    //     // var feetToInches = myHeightFt / 12;
-    //     // console.log(feetToInches)
-    //     // var heightFull = parseInt(myHeightFt + myHeightIn);
-        
-    //     if (gender == "m") {
-            
-    //         // 66 + (6.2 * myWeight) + (12.7 * heightFull) - (6.76 * myAge);
-    //     }
-    //     if (gender == "f") {
-            
-    //         // 655 + (4.35 * myWeight) + (4.7 * heightFull) - (4.7 * myAge);
-    //     }
-    // }
-
-
 $("#get-meal").click(function(){
 
     getBMR(myGender);
@@ -248,5 +213,5 @@ $("#get-meal").click(function(){
     
     $.ajax({url: queryURL, method: "GET", success: function(result){
         console.log(result);
-    }});
+    }}).then();
 });
