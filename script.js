@@ -114,31 +114,37 @@ console.log(gender);
 //   console.log(ageNumber);
 // });
 
-// var settings = {
-//   "async": true,
-//   "crossDomain": true,
-//   "url": "https://fitness-calculator.p.rapidapi.com/bmi?age=" + ageNumber + "&height=" + heightNumber + "&weight=" + weightNumber,
-//   "method": "GET",
-//   "headers": {
-//     "x-rapidapi-host": "fitness-calculator.p.rapidapi.com",
-//     "x-rapidapi-key": "86b98fe979msh6aefe56a206cbf4p16a71ajsn498545912ad2"
-//   }
-// }
+var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "https://fitness-calculator.p.rapidapi.com/bmi?age=" + ageNumber + "&height=" + heightNumber + "&weight=" + weightNumber,
+  "method": "GET",
+  "headers": {
+    "x-rapidapi-host": "fitness-calculator.p.rapidapi.com",
+    "x-rapidapi-key": "86b98fe979msh6aefe56a206cbf4p16a71ajsn498545912ad2"
+  }
+}
 
-// $.ajax(settings).done(function (response) {
-//   console.log(response.bmi)
-//   console.log(response.health)
-//   var bmiAnswers = show(response);
+$.ajax(settings).done(function (response) {
+  console.log(response.bmi)
+  console.log(response.health)
+  var bmiAnswers = show(response);
 
-//   $('#showBmi').html(bmiAnswers);
+  $('#showBmi').html(bmiAnswers);
 
 
 
-// });
+});
 
-// function show(response) {
-//   return response.bmi + response.health
-// }
+function show(response) {
+  return response.bmi + response.health
+}
+$('#genderOptions').submit(function (e) {
+  e.preventDefault();
+  var gender = $('select#gender').val();
+  console.log(gender);
+});
+
 //
 // https://www.programmableweb.com/news/10-most-popular-food-apis/brief/2019/08/06
 //
