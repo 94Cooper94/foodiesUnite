@@ -1,13 +1,14 @@
 
 let myGender= ""; // From User Input
-console.log(myGender);
+// console.log(myGender);
 let myHeightFt= []; // From User Input
+console.log(myHeightFt);
 let myHeightIn= []; // From User Input
 let myWeight= []; // From User Input
 let myAge = []; // From User Input
 
 var convertFeetToInches = myHeightFt / 12;
-console.log(convertFeetToInches);
+// console.log(convertFeetToInches);
 var heightFull = convertFeetToInches + myHeightIn;
 // var genderLetter = myGender.string.charAt(0).toLowercase(); // Change this, no typing, just selection
 
@@ -40,16 +41,16 @@ var myActivityLevel = ""; // From User Input
 
 function getCalories(BMR) {
 
-    if (myActivityLevel == 0) {
+    if (myActivityLevel == "s") {
         BMR * 1.3;
     }
-    if (myActivityLevel == 1) {
+    if (myActivityLevel == "l") {
         BMR * 1.53;
     }
-    if (myActivityLevel == 2) {
+    if (myActivityLevel == "a") {
         BMR * 1.76;
     }
-    if (myActivityLevel == 3) {
+    if (myActivityLevel == "v") {
         BMR * 2.25;
     }
 }
@@ -57,13 +58,15 @@ function getCalories(BMR) {
 var myCaloricIntake = getCalories(myBMR);
 console.log(myCaloricIntake);
 
-// Maintain Calorie Range
-var calorieRange1 = Math.round(myCaloricIntake * .2); 
-var calorieRange2 = Math.round(myCaloricIntake * .3); 
-console.log(calorieRange1);
+// // Maintain Calorie Range
+// var calorieRange1 = Math.round(myCaloricIntake * .2); 
+// var calorieRange2 = Math.round(myCaloricIntake * .3); 
+// console.log(calorieRange1);
 
-var calorieRangeFULL = "calories=" + calorieRange1 + "-" + calorieRange2;
-console.log(calorieRangeFull)
+// = "calories=" + calorieRange1 + "-" + calorieRange2;
+
+// var calorieRangeFULL = ("591" + "-" + "722");
+// console.log(calorieRangeFull)
 // AJAX Call
 // FULL url "https://api.edamam.com/search?q=chicken&app_id=${YOUR_APP_ID}&app_key=${YOUR_APP_KEY}&from=0&to={3 OR LAST INDEX OF YOUR CHOICE}calories={591-722 CALORIE RANGE PER CATEGORY} {&health=alcohol-free}"
 
@@ -72,9 +75,9 @@ var apiID = "&app_id=d88e78b8";
 var apiKey = "&app_key=fa1417bd0cb262ef6b1af85af54b21db";
 var resultAmount = "&from=0&to=10"; // This will show 10 
 
-var whichMeal = "";
+// var whichMeal = "";
 
-var queryURL = apiURL + whichMeal + apiID + apiKey + resultAmount + calorieRangeFULL;
+var queryURL = apiURL + whichMeal + apiID + apiKey + resultAmount + "calories=591-722";
 
 $("#get-meal").click(function(){
     $.ajax({url: queryURL, method: "GET", success: function(result){
@@ -85,29 +88,33 @@ $("#get-meal").click(function(){
 
 
   // Height Selection
-  var myFeet = $("#feet-input").value;
-  var myInches = $("#inches-input").value;
+  var myFeet = $("#feet-input").val();
+  console.log(myFeet);
+  var myInches = $("#inches-input").val();
 
   // Utilizing a new click event method for submit buttons within html forms
   // The target needs to be the form id, not the input id
  
   // Feet
   $("#feet-form").submit(function(event) {
-    myHeightFt.push(myFeet);
     event.preventDefault();
+    myHeightFt.push(myFeet);
+  
   });
   // Inches
   $("#inches-form").submit(function(event) {
-    myHeightIn.push(myInches);
     event.preventDefault();
+    myHeightIn.push(myInches);
+
   });
 
   // Weight Selection
   var weightInput = $("#weight-input").value;
 
   $("#weight-form").submit(function(event) {
-    myWeight.push(weightInput);
     event.preventDefault();
+    myWeight.push(weightInput);
+    
   });
 
   // Gender Selection
