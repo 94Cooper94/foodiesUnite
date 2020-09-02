@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Always Be Chowin'</title>
 
-  <!-- CSS  -->  
+  <!-- CSS  -->
   <link href="css/reset.css" type="text/css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 
 </head>
+
 <body>
   <nav>
     <div class="nav-wrapper">
@@ -31,7 +33,8 @@
           <h5 class="header col s12 light">calorie counting made fun</h5>
         </div>
         <div class="row center">
-          <a href="#mealInputDiv" id="start-meal-ideas" class="btn-large waves-effect waves-light teal lighten-1">get started</a>
+          <a href="#mealInputDiv" id="start-meal-ideas" class="btn-large waves-effect waves-light teal lighten-1">get
+            started</a>
         </div>
         <br><br>
 
@@ -54,7 +57,8 @@
           <br><br>
           <div id="bfastBtnDiv" class="col l4 m4 s12 center">
             <div class="row center">
-              <a href="#userQuery" id="addBfast" class="btn-large waves-effect waves-light teal lighten-1"><i class="material-icons left">free_breakfast</i>breakfast</a>
+              <a href="#userQuery" id="addBfast" class="btn-large waves-effect waves-light teal lighten-1"><i
+                  class="material-icons left">free_breakfast</i>breakfast</a>
             </div>
           </div>
           <div id="lunchBtnDiv" class="col l4 m4 s12 center">
@@ -64,7 +68,8 @@
           </div>
           <div id="dinnerBtnDiv" class="col l4 m4 s12 center">
             <div class="row center">
-              <a href="#userQuery" id="addDinner" class="btn-large waves-effect waves-light teal lighten-1"><i class="material-icons right">local_bar</i>dinner</a>
+              <a href="#userQuery" id="addDinner" class="btn-large waves-effect waves-light teal lighten-1"><i
+                  class="material-icons right">local_bar</i>dinner</a>
             </div>
           </div>
         </div>
@@ -75,11 +80,11 @@
 
 
   <div class="parallax-container valign-wrapper" id="userQuery">
-    
+
     <div class="section no-pad-bot">
       <h3 id="userDetails" class="header center text-lighten-2">user details</h3>
       <div class="container">
-        <div class="row">          
+        <div class="row">
           <div class="row">
             <form class="col s12">
               <div class="row">
@@ -101,7 +106,7 @@
                 </div>
               </div>
             </form>
-          </div> 
+          </div>
 
 
           <div class="col l6 s4">
@@ -109,7 +114,8 @@
               <li><a class="gender" id="female" href="#!">female</a></li>
               <li><a class="gender" id="male" href="#!">male</a></li>
             </ul>
-            <a class="btn dropdown-trigger" href="#!" data-target="gender-div">gender assigned at birth<i class="material-icons right">arrow_drop_down</i></a>
+            <a class="btn dropdown-trigger" href="#!" data-target="gender-div">gender assigned at birth<i
+                class="material-icons right">arrow_drop_down</i></a>
           </div>
 
           <div class="col l6 s4">
@@ -119,11 +125,13 @@
               <li><a id="veryActive" href="#!">very active</a></li>
               <li><a id="extremelyActive" href="#!">extremely active</a></li>
             </ul>
-            <a class="btn dropdown-trigger" href="#!" data-target="metabolicDiv" style="float: right;">metabolic rate<i class="material-icons right">arrow_drop_down</i></a>
-          </div> 
+            <a class="btn dropdown-trigger" href="#!" data-target="metabolicDiv" style="float: right;">metabolic rate<i
+                class="material-icons right">arrow_drop_down</i></a>
+          </div>
 
           <div class="center col l12 s4">
-            <a href="#resultsContainer" id="submit-button" class="btn-large waves-effect waves-light teal lighten-1">submit</a>
+            <a href="#resultsContainer" id="submit-button"
+              class="btn-large waves-effect waves-light teal lighten-1">submit</a>
           </div>
         </div>
         <br><br>
@@ -140,17 +148,23 @@
       <div class="row center">
         <div class="col l3 m3 s3 center">
           <h3 style="color: black;">calorie range:</h3>
-          <h3 id="calorieRangeA" style="color: black;"><!-- lower end of calorie range displays here --></h3>
+          <h3 id="calorieRangeA" style="color: black;">
+            <!-- lower end of calorie range displays here -->
+          </h3>
         </div>
         <div class="col l3 m3 s3 center">
           <h3 style="color: black;">/</h3>
         </div>
         <div class="col l3 m3 s3 center">
-          <h3 id="calorieRangeB" style="color: black;"><!-- upper end of calorie range displays here --></h3>
+          <h3 id="calorieRangeB" style="color: black;">
+            <!-- upper end of calorie range displays here -->
+          </h3>
         </div>
         <div class="col l3 m3 s3 center">
-          <h3 style="color: black;">bmr: </h3>
-          <h3 id="BMRval" style="color: black;"><!-- upper end of calorie range displays here --></h3>
+          <h3 id='showBmi' style="color: black;">bmi: </h3>
+          <h3 id="BMRval" style="color: black;">
+            <!-- upper end of calorie range displays here -->
+          </h3>
         </div>
       </div>
     </div>
@@ -184,9 +198,12 @@
           <h5 class="white-text">external resources</h5>
           <ul>
             <li><a class="black-text" href="https://www.bodybuilding.com">bodybuilding: </a>focused body sculpting</li>
-            <li><a class="black-text" href="https://www.myfitnesspal.com/">myfitnesspal: </a>committed to overall health</li>
-            <li><a class="black-text" href="https://www.weightwatchers.com/us/">weightwatchers: </a>watch what you eat!</li>
-            <li><a class="black-text" href="https://www.edamam.com/wizard/free/">edamam nutrition analysis: </a>know the exact numbers</li>
+            <li><a class="black-text" href="https://www.myfitnesspal.com/">myfitnesspal: </a>committed to overall health
+            </li>
+            <li><a class="black-text" href="https://www.weightwatchers.com/us/">weightwatchers: </a>watch what you eat!
+            </li>
+            <li><a class="black-text" href="https://www.edamam.com/wizard/free/">edamam nutrition analysis: </a>know the
+              exact numbers</li>
           </ul>
         </div>
         <div class="col l6 s12 center">
@@ -194,7 +211,8 @@
           <ul>
             <li><a class="black-text" href="https://github.com/94Cooper94">Cooper: </a>github & layout manager</li>
             <li><a class="black-text" href="https://github.com/DesmondAldridge">Desmond: </a>javascript mastermind</li>
-            <li><a class="black-text" href="https://github.com/Athorpe96">Austin: </a>innovator & backend consultant</li>
+            <li><a class="black-text" href="https://github.com/Athorpe96">Austin: </a>innovator & backend consultant
+            </li>
             <li><a class="black-text" href="https://github.com/justinpricer">Justin: </a>branding & marketing</li>
           </ul>
         </div>
@@ -204,7 +222,7 @@
     <!--  -->
     <div class="footer-copyright center">
       <div class="container">
-      made /in part/ by <a class="brown-text text-lighten-3" href="http://materializecss.com">materialize</a>
+        made /in part/ by <a class="brown-text text-lighten-3" href="http://materializecss.com">materialize</a>
       </div>
     </div>
   </footer>
@@ -217,5 +235,6 @@
   <script src="js/init.js"></script>
   <script src="js/script.js"></script>
 
-  </body>
+</body>
+
 </html>
