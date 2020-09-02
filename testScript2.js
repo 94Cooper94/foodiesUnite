@@ -58,7 +58,16 @@ $('.dropdown-trigger').dropdown();
 //////////////////////////////////
 
 // Gender Selection
-$("#maleBTN").click(function(event) {
+$("#female").click(function(event) {
+    event.preventDefault();
+  
+      myGender.length = 0;
+      myGender.unshift("f");
+      console.log(myGender);
+  
+  });
+
+$("#male").click(function(event) {
   event.preventDefault();
 
     myGender.length = 0;
@@ -68,68 +77,45 @@ $("#maleBTN").click(function(event) {
 
 });
 
-$("#femaleBTN").click(function(event) {
-  event.preventDefault();
+// If some of the input were to be submitted prior to the main that produces the results / makes the AJAX
+// $("#submit-button").click(function(event) {
+//     event.preventDefault();
 
-    myGender.length = 0;
-    myGender.unshift("f");
-    console.log(myGender);
+//     var myFeet = parseInt(($("#feet").val()));
+//     console.log(myFeet);
+//     var feetToInches = myFeet * 12;
+//     console.log(feetToInches)
 
-});
-
-$("#feet-form").submit(function(event) {
-  event.preventDefault();
-
-    var myFeet = parseInt(($("#feet-input").val()));
-    console.log(myFeet);
-    var feetToInches = myFeet * 12;
-    console.log(feetToInches)
-
-
-    myHeightFt.length = 0;
-    myHeightFt.unshift(feetToInches);
-    console.log(myHeightFt)
+//     myHeightFt.length = 0;
+//     myHeightFt.unshift(feetToInches);
+//     console.log(myHeightFt);
     
-});
+//     var myInches = parseInt(($("#inches").val()));
+//     console.log(myInches);
 
-$("#inches-form").submit(function(event) {
-  event.preventDefault();
+//     myHeightIn.length = 0;
+//     myHeightIn.unshift(myInches);
+//     console.log(myHeightIn);
 
-    var myInches = parseInt(($("#inches-input").val()));
-    console.log(myInches);
+//     var weightInput = parseInt(($("#weight").val()));
+//     console.log(weightInput);
 
-    myHeightIn.length = 0;
-    myHeightIn.unshift(myInches);
-    console.log(myHeightIn)
-    
-});
+//     myWeight.length = 0;
+//     myWeight.unshift(weightInput);
+//     console.log(myWeight);
 
-$("#weight-form").submit(function(event) {
-  event.preventDefault();
+//     var ageInput = parseInt(($("#age").val()));
+//     console.log(ageInput);
 
-    var weightInput = parseInt(($("#weight-input").val()));
-    console.log(weightInput);
+//     myAge.length = 0;
+//     myAge.unshift(ageInput);
+//     console.log(myAge);
 
-    myWeight.length = 0;
-    myWeight.unshift(weightInput);
-    console.log(myWeight);
-    
-});
+// });
 
-$("#age-form").submit(function(event) {
-  event.preventDefault();
-
-    var ageInput = parseInt(($("#age-input").val()));
-    console.log(ageInput);
-
-    myAge.length = 0;
-    myAge.unshift(ageInput);
-    console.log(myAge);
-    
-});
 
 // Meal Selection
-$("#breakfastBTN").click(function(event) {
+$("#addBfast").click(function(event) {
     event.preventDefault();
 
     whichMeal.length = 0;
@@ -137,7 +123,7 @@ $("#breakfastBTN").click(function(event) {
     console.log(whichMeal);
     });
 
-$("#lunchBTN").click(function(event) {
+$("#addLunch").click(function(event) {
     event.preventDefault();
 
     whichMeal.length = 0;
@@ -146,7 +132,7 @@ $("#lunchBTN").click(function(event) {
 
 });
 
-$("#dinnerBTN").click(function(event) {
+$("#addDinner").click(function(event) {
     event.preventDefault();
 
     whichMeal.length = 0;
@@ -156,7 +142,7 @@ $("#dinnerBTN").click(function(event) {
 });
 
 // Activity Level Selection
-$("#sedentaryBTN").click(function(event) {
+$("#sedentary").click(function(event) {
     event.preventDefault();
 
     myActivityLevel.length = 0;
@@ -165,7 +151,7 @@ $("#sedentaryBTN").click(function(event) {
 
 });
 
-$("#lightBTN").click(function(event) {
+$("#light").click(function(event) {
     event.preventDefault();
 
     myActivityLevel.length = 0;
@@ -173,7 +159,7 @@ $("#lightBTN").click(function(event) {
     console.log(myActivityLevel);
 });
 
-$("#activeBTN").click(function(event) {
+$("#active").click(function(event) {
     event.preventDefault();
 
     myActivityLevel.length = 0;
@@ -181,7 +167,7 @@ $("#activeBTN").click(function(event) {
     console.log(myActivityLevel);
 });
 
-$("#vigorousBTN").click(function(event) {
+$("#vigorous").click(function(event) {
     event.preventDefault();
 
     myActivityLevel.length = 0;
@@ -189,7 +175,38 @@ $("#vigorousBTN").click(function(event) {
     console.log(myActivityLevel);
 });
 
-$("#get-meal").click(function(){
+$("#submit-button").click(function(event){
+    event.preventDefault();
+
+    var myFeet = parseInt(($("#feet").val()));
+    console.log(myFeet);
+    var feetToInches = myFeet * 12;
+    console.log(feetToInches)
+
+    myHeightFt.length = 0;
+    myHeightFt.unshift(feetToInches);
+    console.log(myHeightFt);
+    
+    var myInches = parseInt(($("#inches").val()));
+    console.log(myInches);
+
+    myHeightIn.length = 0;
+    myHeightIn.unshift(myInches);
+    console.log(myHeightIn);
+
+    var weightInput = parseInt(($("#weight").val()));
+    console.log(weightInput);
+
+    myWeight.length = 0;
+    myWeight.unshift(weightInput);
+    console.log(myWeight);
+
+    var ageInput = parseInt(($("#age").val()));
+    console.log(ageInput);
+
+    myAge.length = 0;
+    myAge.unshift(ageInput);
+    console.log(myAge);
 
     getBMR(myGender);
     getCalories(myBMR);
@@ -217,5 +234,17 @@ $("#get-meal").click(function(){
     
     $.ajax({url: queryURL, method: "GET", success: function(result){
         console.log(result);
-    }}).then();
+    }}).then(function(response) {
+
+        console.log(response.hits[0].recipe.image);
+
+        var testText = $("<h4>").text(response.hits[0].recipe.label);
+        var firstRecipe = $("<img>").attr("scr=" + response.hits[0].recipe.image);
+
+        $("#mealDiv").empty();
+        $("#mealDiv").append(testText, firstRecipe);
+
+    });
+
+
 });
