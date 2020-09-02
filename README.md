@@ -12,8 +12,12 @@ Build a dashboard application with input functionality to find meal plans for mu
 https://94cooper94.github.io/foodiesUnite/
 
 ## App Demo
+### Let's get started 
+![User Input](media/GET.PNG)
+
 ### User Input - Enter your info 
 ![User Input](media/USER.PNG)
+
 
 
 
