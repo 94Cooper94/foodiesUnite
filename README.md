@@ -13,7 +13,8 @@ https://94cooper94.github.io/foodiesUnite/
 
 ## App Demo
 ### User Input - click search 
-![User Input](media/TOP.PNG)
+![User Input](media/INPUT.PNG)
+
 
 ### Technologies Used 
 - JavaScript
