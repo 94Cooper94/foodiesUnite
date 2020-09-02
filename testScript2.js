@@ -77,6 +77,7 @@ $("#male").click(function(event) {
 
 });
 
+// If some of the input were to be submitted prior to the main that produces the results / makes the AJAX
 // $("#submit-button").click(function(event) {
 //     event.preventDefault();
 
@@ -233,5 +234,17 @@ $("#submit-button").click(function(event){
     
     $.ajax({url: queryURL, method: "GET", success: function(result){
         console.log(result);
-    }}).then();
+    }}).then(function(response) {
+
+        console.log(response.hits[0].recipe.image);
+
+        var testText = $("<h4>").text(response.hits[0].recipe.label);
+        var firstRecipe = $("<img>").attr("scr=" + response.hits[0].recipe.image);
+
+        $("#mealDiv").empty();
+        $("#mealDiv").append(testText, firstRecipe);
+
+    });
+
+
 });
