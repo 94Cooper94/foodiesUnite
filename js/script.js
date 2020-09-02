@@ -1,10 +1,10 @@
 ////////////////////////////////////////////////////////////////////
 // deezmond's section
 // From User Input
-var myGender= [""]; // From User Input
-var myHeightFt= [];
-var myHeightIn= [];
-var myWeight= [];
+var myGender = [""]; // From User Input
+var myHeightFt = [];
+var myHeightIn = [];
+var myWeight = [];
 var myAge = [];
 var whichMeal = [""];
 var myActivityLevel = [""];
@@ -60,17 +60,17 @@ $('.dropdown-trigger').dropdown();
 //////////////////////////////////
 
 // Gender Selection
-$("#female").click(function(event) {
+$("#female").click(function (event) {
     event.preventDefault();
-  
-      myGender.length = 0;
-      myGender.unshift("f");
-      console.log(myGender);
-  
-  });
 
-$("#male").click(function(event) {
-  event.preventDefault();
+    myGender.length = 0;
+    myGender.unshift("f");
+    console.log(myGender);
+
+});
+
+$("#male").click(function (event) {
+    event.preventDefault();
 
     myGender.length = 0;
     myGender.unshift("m");
@@ -91,7 +91,7 @@ $("#male").click(function(event) {
 //     myHeightFt.length = 0;
 //     myHeightFt.unshift(feetToInches);
 //     console.log(myHeightFt);
-    
+
 //     var myInches = parseInt(($("#inches").val()));
 //     console.log(myInches);
 
@@ -117,15 +117,15 @@ $("#male").click(function(event) {
 
 
 // Meal Selection
-$("#addBfast").click(function(event) {
+$("#addBfast").click(function (event) {
     event.preventDefault();
 
     whichMeal.length = 0;
     whichMeal.unshift("breakfast");
     console.log(whichMeal);
-    });
+});
 
-$("#addLunch").click(function(event) {
+$("#addLunch").click(function (event) {
     event.preventDefault();
 
     whichMeal.length = 0;
@@ -134,7 +134,7 @@ $("#addLunch").click(function(event) {
 
 });
 
-$("#addDinner").click(function(event) {
+$("#addDinner").click(function (event) {
     event.preventDefault();
 
     whichMeal.length = 0;
@@ -144,7 +144,7 @@ $("#addDinner").click(function(event) {
 });
 
 // Activity Level Selection
-$("#sedentary").click(function(event) {
+$("#sedentary").click(function (event) {
     event.preventDefault();
 
     myActivityLevel.length = 0;
@@ -153,7 +153,7 @@ $("#sedentary").click(function(event) {
 
 });
 
-$("#light").click(function(event) {
+$("#light").click(function (event) {
     event.preventDefault();
 
     myActivityLevel.length = 0;
@@ -161,7 +161,7 @@ $("#light").click(function(event) {
     console.log(myActivityLevel);
 });
 
-$("#active").click(function(event) {
+$("#active").click(function (event) {
     event.preventDefault();
 
     myActivityLevel.length = 0;
@@ -169,7 +169,7 @@ $("#active").click(function(event) {
     console.log(myActivityLevel);
 });
 
-$("#vigorous").click(function(event) {
+$("#vigorous").click(function (event) {
     event.preventDefault();
 
     myActivityLevel.length = 0;
@@ -177,7 +177,7 @@ $("#vigorous").click(function(event) {
     console.log(myActivityLevel);
 });
 
-$("#submit-button").click(function(event){
+$("#submit-button").click(function (event) {
     event.preventDefault();
 
     var myFeet = parseInt(($("#feet").val()));
@@ -188,7 +188,7 @@ $("#submit-button").click(function(event){
     myHeightFt.length = 0;
     myHeightFt.unshift(feetToInches);
     console.log(myHeightFt);
-    
+
     var myInches = parseInt(($("#inches").val()));
     console.log(myInches);
 
@@ -217,12 +217,12 @@ $("#submit-button").click(function(event){
     console.log(myCaloricIntake);
 
     // Producing Calorie Range
-    var calorieRange1 = Math.round(myCaloricIntake * .2); 
-    var calorieRange2 = Math.round(myCaloricIntake * .3); 
+    var calorieRange1 = Math.round(myCaloricIntake * .2);
+    var calorieRange2 = Math.round(myCaloricIntake * .3);
     console.log(calorieRange1);
     console.log(calorieRange2);
 
-    calorieRangeFULL= "&calories=" + calorieRange1 + "-" + calorieRange2;
+    calorieRangeFULL = "&calories=" + calorieRange1 + "-" + calorieRange2;
     console.log(calorieRangeFULL);
 
     // AJAX Call
@@ -233,10 +233,12 @@ $("#submit-button").click(function(event){
 
     var queryURL = apiURL + whichMeal + apiID + apiKey + resultAmount + calorieRangeFULL;
 
-    
-    $.ajax({url: queryURL, method: "GET", success: function(result){
-        console.log(result);
-    }}).then(function(response) {
+
+    $.ajax({
+        url: queryURL, method: "GET", success: function (result) {
+            console.log(result);
+        }
+    }).then(function (response) {
 
         console.log(response.hits[0].recipe.image);
 
@@ -343,41 +345,45 @@ $("#submit-button").click(function(event){
 // austin's section
 
 //for the BMI api
-// $('#form').submit(function (num) {
-//   num.preventDefault();
-//   var heightNumber = $("#height").val();
-//   var weightNumber = $('#weight').val();
-//   var ageNumber = $('#age').val();
-//   console.log(weightNumber);
-//   console.log(heightNumber);
-//   console.log(ageNumber);
-// });
 
-// var settings = {
-//   "async": true,
-//   "crossDomain": true,
-//   "url": "https://fitness-calculator.p.rapidapi.com/bmi?age=" + ageNumber + "&height=" + heightNumber + "&weight=" + weightNumber,
-//   "method": "GET",
-//   "headers": {
-//     "x-rapidapi-host": "fitness-calculator.p.rapidapi.com",
-//     "x-rapidapi-key": "86b98fe979msh6aefe56a206cbf4p16a71ajsn498545912ad2"
-//   }
-// }
-
-// $.ajax(settings).done(function (response) {
-//   console.log(response.bmi)
-//   console.log(response.health)
-//   var bmiAnswers = show(response);
-
-//   $('#showBmi').html(bmiAnswers);
+$('#submit-button').click(function (num) {
+    num.preventDefault();
+    var inches = parseInt(($("#inches").val()));
+    var numFeet = parseInt(($("#feet").val()));
+    var weightNumber = parseInt(($("#weight").val()));
+    var ageNumber = parseInt(($("#age").val()));
+    console.log(weightNumber);
+    console.log(numFeet);
+    console.log(ageNumber);
+    console.log(inches);
 
 
+    var settings = {
+        "async": true,
+        "crossDomain": true,
+        "url": "https://fitness-calculator.p.rapidapi.com/bmi?age=" + ageNumber + "&height=" + numFeet + inches + "&weight=" + weightNumber,
+        "method": "GET",
+        "headers": {
+            "x-rapidapi-host": "fitness-calculator.p.rapidapi.com",
+            "x-rapidapi-key": "86b98fe979msh6aefe56a206cbf4p16a71ajsn498545912ad2"
+        }
+    }
 
-// });
+    $.ajax(settings).done(function (response) {
+        console.log(response.bmi)
+        console.log(response.health)
+        var bmiAnswers = show(response);
 
-// function show(response) {
-//   return response.bmi + response.health
-// }
+        $('#showBmi').html(bmiAnswers);
+
+
+
+    });
+
+    function show(response) {
+        return response.bmi + response.health
+    }
+});
 // $('#genderOptions').submit(function (e) {
 //   e.preventDefault();
 //   var gender = $('select#gender').val();
