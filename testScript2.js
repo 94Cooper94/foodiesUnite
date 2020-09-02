@@ -113,7 +113,6 @@ $("#male").click(function(event) {
 
 // });
 
-
 // Meal Selection
 $("#addBfast").click(function(event) {
     event.preventDefault();
@@ -235,7 +234,8 @@ $("#submit-button").click(function(event){
     $.ajax({url: queryURL, method: "GET", success: function(result){
         console.log(result);
     }}).then(function(response) {
-
+        
+        console.log(response);
         console.log(response.hits[0].recipe.image);
 
         var testText = $("<h4>").text(response.hits[0].recipe.label);
