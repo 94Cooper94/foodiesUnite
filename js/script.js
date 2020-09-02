@@ -356,12 +356,15 @@ $('#submit-button').click(function (num) {
     console.log(numFeet);
     console.log(ageNumber);
     console.log(inches);
+    var totalHeight = (numFeet * 30.48) + (inches * 2.54);
+    console.log(totalHeight)
+
 
 
     var settings = {
         "async": true,
         "crossDomain": true,
-        "url": "https://fitness-calculator.p.rapidapi.com/bmi?age=" + ageNumber + "&height=" + numFeet + inches + "&weight=" + weightNumber,
+        "url": "https://fitness-calculator.p.rapidapi.com/bmi?age=" + ageNumber + "&height=" + totalHeight + "&weight=" + weightNumber,
         "method": "GET",
         "headers": {
             "x-rapidapi-host": "fitness-calculator.p.rapidapi.com",
