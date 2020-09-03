@@ -138,6 +138,7 @@ $("#vigorous").click(function (event) {
     myActivityLevel.length = 0;
     myActivityLevel.unshift("v");
     console.log(myActivityLevel);
+
 });
 
 $("#submit-button").click(function (event) {
@@ -196,7 +197,6 @@ $("#submit-button").click(function (event) {
 
     var queryURL = apiURL + whichMeal + apiID + apiKey + resultAmount + calorieRangeFULL;
 
-
     $.ajax({
         url: queryURL, method: "GET", success: function (result) {
             console.log(result);
@@ -205,19 +205,19 @@ $("#submit-button").click(function (event) {
 
         console.log(response.hits[0].recipe.image);
 
-        var rp1Name = $("<h4>").text(response.hits[0].recipe.label);
+        var rp1Name = $("<h4>").text(response.hits[0].recipe.label).attr("href=" + response.hits[0].recipe.url);
         var rp1Image = $("<img>").attr("scr=" + response.hits[0].recipe.image);
 
-        var rp2Name = $("<h4>").text(response.hits[1].recipe.label);
+        var rp2Name = $("<h4>").text(response.hits[1].recipe.label).attr("href=" + response.hits[1].recipe.url);
         var rp2Image = $("<img>").attr("scr=" + response.hits[1].recipe.image);
 
-        var rp3Name = $("<h4>").text(response.hits[2].recipe.label);
+        var rp3Name = $("<h4>").text(response.hits[2].recipe.label).attr("href=" + response.hits[2].recipe.url);
         var rp3Image = $("<img>").attr("scr=" + response.hits[2].recipe.image);
 
-        var rp4Name = $("<h4>").text(response.hits[3].recipe.label);
+        var rp4Name = $("<h4>").text(response.hits[3].recipe.label).attr("href=" + response.hits[3].recipe.url);
         var rp4Image = $("<img>").attr("scr=" + response.hits[3].recipe.image);
 
-        var rp5Name = $("<h4>").text(response.hits[4].recipe.label);
+        var rp5Name = $("<h4>").text(response.hits[4].recipe.label).attr("href=" + response.hits[4].recipe.url);
         var rp5Image = $("<img>").attr("scr=" + response.hits[4].recipe.image);
 
         $("#mealDiv").empty();

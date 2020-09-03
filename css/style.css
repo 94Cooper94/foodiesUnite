@@ -9,6 +9,22 @@
   color: white;
 }
 
+::placeholder {
+  color: white;
+  opacity: 100;
+}
+
+#resultsContainer {
+  background-image: url(../media/blankMenuTemplate.jpg);
+  background-repeat: no-repeat;
+  background-attachment: top;
+  background-position: center;
+}
+
+body {
+  background-color: indianred;
+}
+
 nav ul a,
 nav .brand-logo {
   color: white;
