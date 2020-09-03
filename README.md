@@ -6,32 +6,38 @@ Why foodiesUnite? Currently everyone is trying to find a way to cut costs, and s
 Build our first app using an API. Retrieve data from a third-party meal plan API (Edamam Nutrition Analysis) and using it in context.
 
 # Functionality
-Build a dashboard application with input functionality to find meal plans for multiple body type goals.
+Build a dashboard application with input functionality to explore a variety of meal options that take caloric intake into account.
 
 # Deployed site: 
 https://94cooper94.github.io/foodiesUnite/
 
 ## App Demo
-### Let's get started 
-![User Input](media/GET.PNG)
 
-### User Input - Enter your info 
-![User Input](media/USER.PNG)
+![User Input](media/homePage.PNG)
 
-### Results 
-![User Input](media/RESULTS.PNG)
+
+![User Input](media/inputPage.PNG)
+
+
+![User Input](media/userSelection.PNG)
+
+![User Input](media/userInput.PNG)
+
+![User Input](media/menuPage.PNG)
 
 
 
 
 ### Technologies Used 
-- JavaScript
-- Edamam API
-- HTML
-- CSS
+- GitHub & GitHub Pages
+- HTML & CSS
+- Materialize CSS & JavaScript Bootstrap
+- JavaScript & JQuery
+- EdamamAPI
+- RapidAPI Fitness Calculator
 
 ### Contributors
-- Cooper Ahearn
-- Desmond Aldridge
-- Austin Thorpe
-- Justin Pricer
+- Cooper Ahearn - github and layout mastermind
+- Desmond Aldridge - javascript virtuoso
+- Austin Thorpe - innovator & backend engineer
+- Justin Pricer - branding & public relations
