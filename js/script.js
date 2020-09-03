@@ -386,7 +386,9 @@ $('#submit-button').click(function (num) {
     });
 
     function show(response) {
-        return response.bmi + response.health
+        return "<h3><strong>BMI</strong>: " + response.bmi + "</h3>" +
+            "<h3><strong>Health Status</strong>: " + response.health + "</h3>";
+
     }
 });
 // $('#genderOptions').submit(function (e) {
