@@ -207,23 +207,28 @@ $("#submit-button").click(function (event) {
 
         console.log(response.hits[0].recipe.image);
 
-        var rp1Name = $("<h4>").text(response.hits[0].recipe.label).attr("href=" + response.hits[0].recipe.url);
-        var rp1Image = $("<img>").attr("scr=" + response.hits[0].recipe.image);
+        var rp1Name = $("<h6>").text(response.hits[0].recipe.label);
+        var rp1FULL = $("<a>").attr("href", response.hits[0].recipe.url).html(rp1Name);
+        var rp1Image = $("<img>").attr("src" , response.hits[0].recipe.image).attr("style" , "width:75px;height:75px;");
 
-        var rp2Name = $("<h4>").text(response.hits[1].recipe.label).attr("href=" + response.hits[1].recipe.url);
-        var rp2Image = $("<img>").attr("scr=" + response.hits[1].recipe.image);
+        var rp2Name = $("<h6>").text(response.hits[1].recipe.label);
+        var rp2FULL = $("<a>").attr("href", response.hits[1].recipe.url).html(rp2Name);
+        var rp2Image = $("<img>").attr("src" , response.hits[1].recipe.image).attr("style" , "width:75px;height:75px;");
 
-        var rp3Name = $("<h4>").text(response.hits[2].recipe.label).attr("href=" + response.hits[2].recipe.url);
-        var rp3Image = $("<img>").attr("scr=" + response.hits[2].recipe.image);
+        var rp3Name = $("<h6>").text(response.hits[2].recipe.label);
+        var rp3FULL = $("<a>").attr("href", response.hits[2].recipe.url).html(rp3Name);
+        var rp3Image = $("<img>").attr("src" , response.hits[2].recipe.image).attr("style" , "width:75px;height:75px;");
 
-        var rp4Name = $("<h4>").text(response.hits[3].recipe.label).attr("href=" + response.hits[3].recipe.url);
-        var rp4Image = $("<img>").attr("scr=" + response.hits[3].recipe.image);
+        var rp4Name = $("<h6>").text(response.hits[3].recipe.label);
+        var rp4FULL = $("<a>").attr("href", response.hits[3].recipe.url).html(rp4Name);
+        var rp4Image = $("<img>").attr("src" , response.hits[3].recipe.image).attr("style" , "width:75px;height:75px;");
 
-        var rp5Name = $("<h4>").text(response.hits[4].recipe.label).attr("href=" + response.hits[4].recipe.url);
-        var rp5Image = $("<img>").attr("scr=" + response.hits[4].recipe.image);
+        var rp5Name = $("<h6>").text(response.hits[4].recipe.label);
+        var rp5FULL = $("<a>").attr("href", response.hits[4].recipe.url).html(rp5Name);
+        var rp5Image = $("<img>").attr("src" , response.hits[4].recipe.image).attr("style" , "width:75px;height:75px;");
 
         $("#mealDiv").empty();
-        $("#mealDiv").append(rp1Name, rp1Image, rp2Name, rp2Image, rp3Name, rp3Image, rp4Name, rp4Image, rp5Name, rp5Image);
+        $("#mealDiv").append(rp1FULL, rp1Image, rp2FULL, rp2Image, rp3FULL, rp3Image, rp4FULL, rp4Image, rp5FULL, rp5Image);
 
     });
 });
@@ -366,8 +371,8 @@ $('#submit-button').click(function (num) {
     function show(response) {
         var bmiNum = response.bmi
         var healthNum = response.health
-        return "<h3><strong>bmi</strong>: " + bmiNum.toFixed(2) + "</h3>" +
-            "<h3><strong>health status</strong>: " + healthNum + "</h3>";
+        return "<h5><strong>bmi</strong>: " + bmiNum.toFixed(2) + "</h5>" +
+            "<h5><strong>health status</strong>: " + healthNum + "</h5>";
 
     }
 });
