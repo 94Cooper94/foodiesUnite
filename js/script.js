@@ -243,7 +243,7 @@ $("#submit-button").click(function (event) {
 // austin's section
 //
 //for the BMI api
-
+//user clicks submit
 $('#submit-button').click(function (num) {
     num.preventDefault();
     var inches = parseInt(($("#inches").val()));
@@ -260,7 +260,6 @@ $('#submit-button').click(function (num) {
     console.log(newWeight)
 
 
-
     var settings = {
         "async": true,
         "crossDomain": true,
@@ -273,50 +272,23 @@ $('#submit-button').click(function (num) {
     }
 
     $.ajax(settings).done(function (response) {
-        console.log(response.bmi)
-        console.log(response.health)
+        //console.log(response.bmi)
+        //console.log(response.health)
+
         var bmiAnswers = show(response);
         var calorieDisplay = myCaloricIntake;
 
+        //Displays Daily Calorie
         $('#BMRval').html("Daily Calories: " + calorieDisplay)
-
-
         $('#showBmi').html(bmiAnswers);
     });
-
 
     function show(response) {
         var bmiNum = response.bmi
         var healthNum = response.health
 
-
+        //Displays BMI and Health Status
         return "<h5><strong>bmi</strong>: " + bmiNum.toFixed(2) + "</h5>" +
             "<h5><strong>health status</strong>: " + healthNum + "</h5>";
-
-
     }
 });
-// $('#genderOptions').submit(function (e) {
-//   e.preventDefault();
-//   var gender = $('select#gender').val();
-//   console.log(gender);
-// });
-
-//
-// https://www.programmableweb.com/news/10-most-popular-food-apis/brief/2019/08/06
-//
-//
-//
-//var searchTerm = ""
-// var app_id = "d88e78b8";
-// var api_key = "fa1417bd0cb262ef6b1af85af54b21db";
-// var queryURL = "https://api.edamam.com/search?q=" + searchTerm + "&app_id=" + app_id + "&app_key=" + api_key;
-
-// $ajax({
-//   queryURL,
-//   type: 'GET',
-//   dataType: 'json',
-//   success: function (q) {
-//     console.log(q)
-//   }
-// })
