@@ -188,7 +188,7 @@ $("#submit-button").click(function (event) {
 
     calorieRangeFULL = "Calorie Range=" + calorieRange1 + "-" + calorieRange2;
     console.log(calorieRangeFULL);
-    $('#BMRval').append(calorieRangeFULL);
+    $('#BMRval').append("Calorie Day Intake " + myCaloricIntake);
 
 
     // AJAX Call
