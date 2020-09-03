@@ -25,6 +25,10 @@ https://94cooper94.github.io/foodiesUnite/
 
 ![User Input](media/menuPage.PNG)
 
+![User Input](media/demo1.mp4)
+
+![User Input](media/demo2.mp4)
+
 
 
 
