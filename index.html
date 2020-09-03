@@ -115,10 +115,10 @@
 
           <div class="col l6 s4">
             <ul id="metabolicDiv" class="dropdown-content">
-              <li><a id="notActive" href="#!">sedentary</a></li>
-              <li><a id="prettyActive" href="#!">pretty active</a></li>
-              <li><a id="veryActive" href="#!">very active</a></li>
-              <li><a id="extremelyActive" href="#!">extremely active</a></li>
+              <li><a id="sedentary" href="#!">sedentary</a></li>
+              <li><a id="light" href="#!">light activity</a></li>
+              <li><a id="active" href="#!">highly active </a></li>
+              <li><a id="vigorous" href="#!">vigorous</a></li>
             </ul>
             <a class="btn dropdown-trigger" href="#!" data-target="metabolicDiv" style="float: right;">metabolic rate<i
                 class="material-icons right">arrow_drop_down</i></a>
@@ -141,22 +141,8 @@
 
     <div class="section">
       <div class="row center">
-        <div class="col l3 m3 s3 center">
-          <h3>calorie range:</h3>
-          <h3 id="calorieRangeA">
-            <!-- lower end of calorie range displays here -->
-          </h3>
-        </div>
-        <div class="col l1 m1 s1 center">
-          <h3>/</h3>
-        </div>
-        <div class="col l3 m3 s3 center">
-          <h3 id="calorieRangeB">
-            <!-- upper end of calorie range displays here -->
-          </h3>
-        </div>
-        <div class="col l5 m5 s5 center">
-          <h3 id='showBmi'>bmi: </h3>
+        <div class="col s12 m12 l12 center">
+          <h3 id='showBmi'></h3>
           <h3 id="BMRval">
             <!-- upper end of calorie range displays here -->
           </h3>
@@ -165,7 +151,8 @@
     </div>
 
     <div class="section">
-      <div class="row">
+      <div class="row center">
+        <h3>meal ideas:</h3>
         <div id="mealDiv" class="col s12 m12 l12 center">
           <!-- meals based on user's selection go here -->
         </div>
@@ -173,16 +160,6 @@
     </div>
   </div>
 
-
-
-  <div class="container valign-wrapper" style="background-color: indianred;">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-        </div>
-      </div>
-    </div>
-  </div>
 
   <footer class="page-footer coral">
     <div class="container">

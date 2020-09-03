@@ -361,8 +361,8 @@ $('#submit-button').click(function (num) {
     });
 
     function show(response) {
-        return "<h3><strong>BMI</strong>: " + response.bmi + "</h3>" +
-            "<h3><strong>Health Status</strong>: " + response.health + "</h3>";
+        return "<h3><strong>bmi</strong>: " + response.bmi + "</h3>" +
+            "<h3><strong>health status</strong>: " + response.health + "</h3>";
 
     }
 });
