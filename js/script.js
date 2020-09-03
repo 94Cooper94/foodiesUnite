@@ -58,6 +58,9 @@ function getCalories(BMR) {
 //////////////////////////////////
 $('.dropdown-trigger').dropdown();
 //////////////////////////////////
+$(document).ready(function(){
+    $('.modal').modal();
+})
 
 // Gender Selection
 $("#female").click(function (event) {
@@ -377,4 +380,3 @@ $('#submit-button').click(function (num) {
 //
 //
 //
-//////////////////////////////////////////////////

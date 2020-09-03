@@ -52,23 +52,62 @@
         <h3 id="mealInputDiv">select meal type</h3>
       </div>
       <br><br>
+
+
+      <!-- Modal "Button" -->
       <div id="bfastBtnDiv" class="col l4 m4 s12 center">
         <div class="row center">
-          <a href="#userDetails" id="addBfast" class="btn-large waves-effect waves-light teal lighten-1"><i
-              class="material-icons left">free_breakfast</i>breakfast</a>
+          <a class="waves-effect waves-light btn modal-trigger" id="addBfast" href="#modal1"><i class="material-icons left">free_breakfast</i>bfast</a>
         </div>
       </div>
+
+      <!-- & Modal Structure -->
+      <div id="modal1" class="modal">
+        <div class="modal-content center" id="bfastBtnDiv">
+          <h4 style="color:black;"><i class="material-icons center" style="color:black;">free_breakfast</i>bfast</h4>
+          <p style="color:black;">you have selected breakfast.</p>
+        </div>
+        <div class="modal-footer center">
+          <a href="#userDetails" class="modal-close">Agree</a>
+        </div>
+      </div>
+
+      <!-- Modal "Button" -->
       <div id="lunchBtnDiv" class="col l4 m4 s12 center">
         <div class="row center">
-          <a href="#userDetails" id="addLunch" class="btn-large waves-effect waves-light teal lighten-1">lunch</a>
+          <a class="waves-effect waves-light btn modal-trigger" id="addLunch" href="#modal2">lunch</a>
         </div>
       </div>
+
+      <!-- & Modal Structure -->
+      <div id="modal2" class="modal">
+        <div class="modal-content center" id="lunchBtnDiv">
+          <h4 style="color:black;">lunch</h4>
+          <p style="color:black;">you have selected lunch.</p>
+        </div>
+        <div class="modal-footer center">
+          <a href="#userDetails" class="modal-close">Agree</a>
+        </div>
+      </div>
+
+      <!-- Modal "Button" -->
       <div id="dinnerBtnDiv" class="col l4 m4 s12 center">
         <div class="row center">
-          <a href="#userDetails" id="addDinner" class="btn-large waves-effect waves-light teal lighten-1"><i
-              class="material-icons right">local_bar</i>dinner</a>
+          <a class="waves-effect waves-light btn modal-trigger" id="addDinner" href="#modal3"><i class="material-icons right">local_bar</i>dinner</a>
         </div>
       </div>
+      
+      <!-- & Modal Structure -->
+      <div id="modal3" class="modal">
+        <div class="modal-content center" id="dinnerBtnDiv">
+          <h4 style="color:black;"><i class="material-icons center" style="color:black;">local_bar</i>dinner</h4>
+          <p style="color:black;">you have selected dinner.</p>
+        </div>
+        <div class="modal-footer center">
+          <a href="#userDetails" class="modal-close">Agree</a>
+        </div>
+      </div>
+
     </div>
   </div>
 
