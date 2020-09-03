@@ -18,6 +18,9 @@ https://94cooper94.github.io/foodiesUnite/
 ### User Input - Enter your info 
 ![User Input](media/USER.PNG)
 
+### Results 
+![User Input](media/RESULTS.PNG)
+
 
 
 
