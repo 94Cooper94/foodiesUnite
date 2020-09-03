@@ -191,6 +191,8 @@ $("#submit-button").click(function (event) {
 
     calorieRangeFULL = "&calories=" + calorieRange1 + "-" + calorieRange2;
     console.log(calorieRangeFULL);
+    $('#BMRval').append("Calorie Day Intake " + myCaloricIntake)
+
 
     // AJAX Call
     var apiURL = "https://api.edamam.com/search?q=";
@@ -363,9 +365,12 @@ $('#submit-button').click(function (num) {
 
     });
 
+
     function show(response) {
-        return "<h3><strong>bmi</strong>: " + response.bmi + "</h3>" +
-            "<h3><strong>health status</strong>: " + response.health + "</h3>";
+        var bmiNum = response.bmi
+        var healthNum = response.health
+        return "<h3><strong>bmi</strong>: " + bmiNum.toFixed(2) + "</h3>" +
+            "<h3><strong>health status</strong>: " + healthNum + "</h3>";
 
     }
 });
