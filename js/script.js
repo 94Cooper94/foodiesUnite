@@ -79,43 +79,6 @@ $("#male").click(function (event) {
 
 });
 
-// If some of the input were to be submitted prior to the main that produces the results / makes the AJAX
-// $("#submit-button").click(function(event) {
-//     event.preventDefault();
-
-//     var myFeet = parseInt(($("#feet").val()));
-//     console.log(myFeet);
-//     var feetToInches = myFeet * 12;
-//     console.log(feetToInches)
-
-//     myHeightFt.length = 0;
-//     myHeightFt.unshift(feetToInches);
-//     console.log(myHeightFt);
-
-//     var myInches = parseInt(($("#inches").val()));
-//     console.log(myInches);
-
-//     myHeightIn.length = 0;
-//     myHeightIn.unshift(myInches);
-//     console.log(myHeightIn);
-
-//     var weightInput = parseInt(($("#weight").val()));
-//     console.log(weightInput);
-
-//     myWeight.length = 0;
-//     myWeight.unshift(weightInput);
-//     console.log(myWeight);
-
-//     var ageInput = parseInt(($("#age").val()));
-//     console.log(ageInput);
-
-//     myAge.length = 0;
-//     myAge.unshift(ageInput);
-//     console.log(myAge);
-
-// });
-
-
 // Meal Selection
 $("#addBfast").click(function (event) {
     event.preventDefault();
@@ -242,11 +205,23 @@ $("#submit-button").click(function (event) {
 
         console.log(response.hits[0].recipe.image);
 
-        var testText = $("<h4>").text(response.hits[0].recipe.label);
-        var firstRecipe = $("<img>").attr("scr=" + response.hits[0].recipe.image);
+        var rp1Name = $("<h4>").text(response.hits[0].recipe.label);
+        var rp1Image = $("<img>").attr("scr=" + response.hits[0].recipe.image);
+
+        var rp2Name = $("<h4>").text(response.hits[1].recipe.label);
+        var rp2Image = $("<img>").attr("scr=" + response.hits[1].recipe.image);
+
+        var rp3Name = $("<h4>").text(response.hits[2].recipe.label);
+        var rp3Image = $("<img>").attr("scr=" + response.hits[2].recipe.image);
+
+        var rp4Name = $("<h4>").text(response.hits[3].recipe.label);
+        var rp4Image = $("<img>").attr("scr=" + response.hits[3].recipe.image);
+
+        var rp5Name = $("<h4>").text(response.hits[4].recipe.label);
+        var rp5Image = $("<img>").attr("scr=" + response.hits[4].recipe.image);
 
         $("#mealDiv").empty();
-        $("#mealDiv").append(testText, firstRecipe);
+        $("#mealDiv").append(rp1Name, rp1Image, rp2Name, rp2Image, rp3Name, rp3Image, rp4Name, rp4Image, rp5Name, rp5Image);
 
     });
 });
