@@ -6,40 +6,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Always Be Chowin'</title>
 
-  <!-- CSS  -->
+  <!-- css reset, personal stylesheet & bootstrap links  -->
   <link href="css/reset.css" type="text/css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
-
 </head>
 
 <body>
   <nav>
     <div class="nav-wrapper" style="background-color: #ee6e73">
-      <!-- simple "brand" icon that navigates user to homepage -->
+      <!-- simple "brand" icon -->
       <a href="index.html" class="brand-logo"><i class="material-icons">cake</i></a>
     </div>
   </nav>
 
-
-
+  <!-- parallax is so beautiful -->
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
-        <br><br>
         <h1 class="header center text-lighten-2">everyday i'm brusselin'</h1>
         <div class="row center">
           <h5 class="header col s12 light">calorie counting made fun</h5>
         </div>
         <div class="row center">
-          <a href="#mealInputDiv" id="start-meal-ideas" class="btn-large waves-effect waves-light teal lighten-1">get
-            started</a>
+          <!-- brings user down to first input section -->
+          <a href="#mealInputDiv" id="start-meal-ideas" class="btn-large waves-effect waves-light teal lighten-1">get started</a>
         </div>
         <br><br>
-
       </div>
     </div>
+
+    <!-- that stunning parallax background that gives the site that oomph factor -->
     <div class="parallax"><img src="media/brusselsSprouts.jpg" alt="Brussels Sprouts"></div>
   </div>
 
@@ -48,12 +46,11 @@
 
   <div class="container">
     <div class="row">
+      
       <div class="col s12 center">
-        <h3><i class="mdi-content-send brown-text"></i></h3>
         <h3 id="mealInputDiv">select meal type</h3>
       </div>
       <br><br>
-
 
       <!-- Modal "Button" -->
       <div id="bfastBtnDiv" class="col l4 m4 s12 center">
@@ -102,48 +99,49 @@
           <a href="#userDetails" class="modal-close">Agree</a>
         </div>
       </div>
+
     </div>
   </div>
 
 
-
+  <!-- omg another one so gorgeous! -->
   <div class="parallax-container valign-wrapper" id="userQuery">
-
     <div class="section no-pad-bot">
+      
       <h3 id="userDetails" class="header center text-lighten-2">user details</h3>
+      <!-- all these rows are needed to center the input fields nicely -->
       <div class="container">
         <div class="row">
+
           <div class="row">
             <form class="col s12">
               <div class="row">
                 <div class="input-field col s3">
                   <input id="age" type="text" class="validate" placeholder="age">
-                  <label for="age"></label>
+                  <label for="age"><!-- user's input for age --></label>
                 </div>
                 <div class="input-field col s3">
                   <input id="feet" type="text" class="validate" placeholder="feet">
-                  <label for="height"></label>
+                  <label for="height"><!-- user's input for height in feet --></label>
                 </div>
                 <div class="input-field col s3">
                   <input id="inches" type="text" class="validate" placeholder="inches">
-                  <label for="height"></label>
+                  <label for="height"><!-- user's input for height in inches --></label>
                 </div>
                 <div class="input-field col s3">
                   <input id="weight" type="text" class="validate" placeholder="weight">
-                  <label for="weight"></label>
+                  <label for="weight"><!-- user's input for weight --></label>
                 </div>
               </div>
             </form>
           </div>
-
 
           <div class="col l6 s4">
             <ul id="gender-div" class="dropdown-content">
               <li><a class="gender" id="female" href="#!">female</a></li>
               <li><a class="gender" id="male" href="#!">male</a></li>
             </ul>
-            <a class="btn dropdown-trigger" href="#!" data-target="gender-div">gender assigned at birth<i
-                class="material-icons right">arrow_drop_down</i></a>
+            <a class="btn dropdown-trigger" href="#!" data-target="gender-div">SAAB<i class="material-icons right">arrow_drop_down</i></a>
           </div>
 
           <div class="col l6 s4">
@@ -153,30 +151,32 @@
               <li><a id="active" href="#!">highly active </a></li>
               <li><a id="vigorous" href="#!">vigorous</a></li>
             </ul>
-            <a class="btn dropdown-trigger" href="#!" data-target="metabolicDiv" style="float: right;">metabolic rate<i
-                class="material-icons right">arrow_drop_down</i></a>
+            <a class="btn dropdown-trigger" href="#!" data-target="metabolicDiv" style="float: right;">BMR<i class="material-icons right">arrow_drop_down</i></a>
           </div>
 
           <div class="center col l12 s4">
             <a href="#resultsContainer" id="submit-button"
               class="btn-large waves-effect waves-light teal lighten-1">submit</a>
           </div>
+
         </div>
         <br><br>
       </div>
+
     </div>
     <div class="parallax"><img src="media/grilledLamb.jpg" alt="Grilled Lamb"></div>
   </div>
 
 
-  <div class="container" id="resultsContainer" style="height: 900px;">
+  <!-- where user's health info and meal options are appended -->
+  <div class="container" id="resultsContainer" style="height: 940px;">
     <br><br><br><br><br><br><br>
     <div class="section">
       <div class="row center">
         <div class="col s12 m12 l12 center">
           <h5 id='showBmi'><!-- bmi displays here --></h5>
           <h5 id="BMRval"><!-- bmr displays here --></h5>
-          
+          <!-- daily caloric intake appends below these two -->
         </div>
       </div>
     </div>
@@ -190,45 +190,46 @@
     </div>
   </div>
 
-
+  
   <footer class="page-footer coral">
     <div class="container">
       <div class="row">
+        <!-- generic health resources for user utilization -->
         <div class="col l6 s12 center">
           <h5 class="white-text">external resources</h5>
           <ul>
             <li><a class="black-text" href="https://www.bodybuilding.com">bodybuilding: </a>focused body sculpting</li>
-            <li><a class="black-text" href="https://www.myfitnesspal.com/">myfitnesspal: </a>committed to overall health
-            </li>
-            <li><a class="black-text" href="https://www.weightwatchers.com/us/">weightwatchers: </a>watch what you eat!
-            </li>
-            <li><a class="black-text" href="https://www.edamam.com/wizard/free/">edamam nutrition analysis: </a>know the
-              exact numbers</li>
+            <li><a class="black-text" href="https://www.myfitnesspal.com/">myfitnesspal: </a>committed to overall health</li>
+            <li><a class="black-text" href="https://www.weightwatchers.com/us/">weightwatchers: </a>watch what you eat!</li>
+            <li><a class="black-text" href="https://www.edamam.com/wizard/free/">edamam nutrition analysis: </a>know the exact numbers</li>
           </ul>
         </div>
+
+        <!-- feel free to reach out and connect! -->
         <div class="col l6 s12 center">
           <h5 class="white-text">meet the developers</h5>
           <ul>
-            <li><a class="black-text" href="https://github.com/94Cooper94">Cooper: </a>github & layout manager</li>
-            <li><a class="black-text" href="https://github.com/DesmondAldridge">Desmond: </a>javascript mastermind</li>
-            <li><a class="black-text" href="https://github.com/Athorpe96">Austin: </a>innovator & backend consultant
-            </li>
-            <li><a class="black-text" href="https://github.com/justinpricer">Justin: </a>branding & marketing</li>
+            <li><a class="black-text" href="https://github.com/94Cooper94">Cooper: </a>github & layout mastermind</li>
+            <li><a class="black-text" href="https://github.com/DesmondAldridge">Desmond: </a>javascript virtuoso</li>
+            <li><a class="black-text" href="https://github.com/Athorpe96">Austin: </a>innovator & backend engineer</li>
+            <li><a class="black-text" href="https://github.com/justinpricer">Justin: </a>branding & public relations</li>
           </ul>
         </div>
+
       </div>
     </div>
 
-    <!--  -->
+    <!-- credit where credit is due. great css bootstrap source -->
     <div class="footer-copyright center">
       <div class="container">
         made /in part/ by <a class="brown-text text-lighten-3" href="http://materializecss.com">materialize</a>
       </div>
     </div>
+    
   </footer>
 
 
-  <!--  Scripts-->
+  <!-- scripts & bootstrap scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
