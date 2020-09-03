@@ -53,21 +53,53 @@
         <h3 id="mealInputDiv">select meal type</h3>
       </div>
       <br><br>
+
+
+      <!-- Modal "Button" -->
       <div id="bfastBtnDiv" class="col l4 m4 s12 center">
         <div class="row center">
-          <a href="#userDetails" id="addBfast" class="btn-large waves-effect waves-light teal lighten-1"><i
-              class="material-icons left">free_breakfast</i>breakfast</a>
+          <a class="waves-effect waves-light btn modal-trigger" id="addBfast" href="#modal1"><i class="material-icons left">free_breakfast</i>bfast</a>
         </div>
       </div>
+
+      <!-- & Modal Structure -->
+      <div id="modal1" class="modal" style="background-color:#86242a;">
+        <div class="modal-content center" id="bfastBtnDiv">
+          <h4><i class="material-icons center">free_breakfast</i>bfast</h4>
+          <p>you have selected breakfast.</p>
+          <a href="#userDetails" class="modal-close">Agree</a>
+        </div>
+      </div>
+
+      <!-- Modal "Button" -->
       <div id="lunchBtnDiv" class="col l4 m4 s12 center">
         <div class="row center">
-          <a href="#userDetails" id="addLunch" class="btn-large waves-effect waves-light teal lighten-1">lunch</a>
+          <a class="waves-effect waves-light btn modal-trigger" id="addLunch" href="#modal2">lunch</a>
         </div>
       </div>
+
+      <!-- & Modal Structure -->
+      <div id="modal2" class="modal" style="background-color:#86242a">
+        <div class="modal-content center" id="lunchBtnDiv">
+          <h4>lunch</h4>
+          <p>you have selected lunch.</p>
+          <a href="#userDetails" class="modal-close">Agree</a>
+        </div>
+      </div>
+
+      <!-- Modal "Button" -->
       <div id="dinnerBtnDiv" class="col l4 m4 s12 center">
         <div class="row center">
-          <a href="#userDetails" id="addDinner" class="btn-large waves-effect waves-light teal lighten-1"><i
-              class="material-icons right">local_bar</i>dinner</a>
+          <a class="waves-effect waves-light btn modal-trigger" id="addDinner" href="#modal3"><i class="material-icons right">local_bar</i>dinner</a>
+        </div>
+      </div>
+      
+      <!-- & Modal Structure -->
+      <div id="modal3" class="modal" style="background-color:#86242a">
+        <div class="modal-content center" id="dinnerBtnDiv">
+          <h4><i class="material-icons center">local_bar</i>dinner</h4>
+          <p>you have selected dinner.</p>
+          <a href="#userDetails" class="modal-close">Agree</a>
         </div>
       </div>
     </div>
@@ -138,14 +170,13 @@
 
 
   <div class="container" id="resultsContainer" style="height: 900px;">
-    <br><br><br><br>
+    <br><br><br><br><br><br><br>
     <div class="section">
       <div class="row center">
         <div class="col s12 m12 l12 center">
-          <h3 id='showBmi'></h3>
-          <h3 id="BMRval">
-            <!-- upper end of calorie range displays here -->
-          </h3>
+          <h5 id='showBmi'><!-- bmi displays here --></h5>
+          <h5 id="BMRval"><!-- bmr displays here --></h5>
+          
         </div>
       </div>
     </div>
