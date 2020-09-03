@@ -59,7 +59,7 @@ function getCalories(BMR) {
 //////////////////////////////////
 $('.dropdown-trigger').dropdown();
 //////////////////////////////////
-$(document).ready(function(){
+$(document).ready(function () {
     $('.modal').modal();
 })
 
@@ -193,8 +193,6 @@ $("#submit-button").click(function (event) {
     calorieRangeFULL = "&calories=" + calorieRange1 + "-" + calorieRange2;
     console.log(calorieRangeFULL);
 
-    var calorieDisplay = myCaloricIntake;
-    $('#BMRval').append("caloric intake: " + calorieDisplay)
 
 
     // AJAX Call
@@ -215,23 +213,23 @@ $("#submit-button").click(function (event) {
 
         var rp1Name = $("<h6>").text(response.hits[0].recipe.label);
         var rp1FULL = $("<a>").attr("href", response.hits[0].recipe.url).html(rp1Name);
-        var rp1Image = $("<img>").attr("src" , response.hits[0].recipe.image).attr("style" , "width:75px;height:75px;");
+        var rp1Image = $("<img>").attr("src", response.hits[0].recipe.image).attr("style", "width:75px;height:75px;");
 
         var rp2Name = $("<h6>").text(response.hits[1].recipe.label);
         var rp2FULL = $("<a>").attr("href", response.hits[1].recipe.url).html(rp2Name);
-        var rp2Image = $("<img>").attr("src" , response.hits[1].recipe.image).attr("style" , "width:75px;height:75px;");
+        var rp2Image = $("<img>").attr("src", response.hits[1].recipe.image).attr("style", "width:75px;height:75px;");
 
         var rp3Name = $("<h6>").text(response.hits[2].recipe.label);
         var rp3FULL = $("<a>").attr("href", response.hits[2].recipe.url).html(rp3Name);
-        var rp3Image = $("<img>").attr("src" , response.hits[2].recipe.image).attr("style" , "width:75px;height:75px;");
+        var rp3Image = $("<img>").attr("src", response.hits[2].recipe.image).attr("style", "width:75px;height:75px;");
 
         var rp4Name = $("<h6>").text(response.hits[3].recipe.label);
         var rp4FULL = $("<a>").attr("href", response.hits[3].recipe.url).html(rp4Name);
-        var rp4Image = $("<img>").attr("src" , response.hits[3].recipe.image).attr("style" , "width:75px;height:75px;");
+        var rp4Image = $("<img>").attr("src", response.hits[3].recipe.image).attr("style", "width:75px;height:75px;");
 
         var rp5Name = $("<h6>").text(response.hits[4].recipe.label);
         var rp5FULL = $("<a>").attr("href", response.hits[4].recipe.url).html(rp5Name);
-        var rp5Image = $("<img>").attr("src" , response.hits[4].recipe.image).attr("style" , "width:75px;height:75px;");
+        var rp5Image = $("<img>").attr("src", response.hits[4].recipe.image).attr("style", "width:75px;height:75px;");
 
         $("#mealDiv").empty();
         $("#mealDiv").append(rp1FULL, rp1Image, rp2FULL, rp2Image, rp3FULL, rp3Image, rp4FULL, rp4Image, rp5FULL, rp5Image);
@@ -278,6 +276,10 @@ $('#submit-button').click(function (num) {
         console.log(response.bmi)
         console.log(response.health)
         var bmiAnswers = show(response);
+        var calorieDisplay = myCaloricIntake;
+
+        $('#BMRval').html("Daily Calories: " + calorieDisplay)
+
 
         $('#showBmi').html(bmiAnswers);
     });
@@ -286,6 +288,7 @@ $('#submit-button').click(function (num) {
     function show(response) {
         var bmiNum = response.bmi
         var healthNum = response.health
+
 
         return "<h5><strong>bmi</strong>: " + bmiNum.toFixed(2) + "</h5>" +
             "<h5><strong>health status</strong>: " + healthNum + "</h5>";
