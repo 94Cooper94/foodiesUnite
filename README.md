@@ -9,7 +9,7 @@ Build our first app using an API. Retrieve data from a third-party meal plan API
 Build a dashboard application with input functionality to find meal plans for multiple body type goals.
 
 # Deployed site: 
-https://94cooper94.github.io/foodiesUnite/
+View a live demo of our website here: https://94cooper94.github.io/foodiesUnite/
 
 ## App Demo
 ### Let's get started 
@@ -31,7 +31,7 @@ https://94cooper94.github.io/foodiesUnite/
 - CSS
 
 ### Contributors
-- Cooper Ahearn
-- Desmond Aldridge
-- Austin Thorpe
-- Justin Pricer
+- Cooper Ahearn - github, layout & style mastermind
+- Desmond Aldridge - javascript virtuoso
+- Austin Thorpe - innovator & backend engineer
+- Justin Pricer - branding & public relations
