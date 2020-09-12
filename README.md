@@ -18,7 +18,7 @@ As stated in our hook, the goal of foodiesUnite is to assist the world in finall
 
 ## Functionality
 
-Through collaborative & synchronized efforts, we've seamlessly integrated one client-side API (Materialize) and two server-side APIs (Edamam & RapidAPI Fitness Calculator) to bring to you a meal generating webpage that suggests meals based on individually inputted user bio-metrics. Below is a sample output:
+Through collaborative & synchronized efforts, we've seamlessly integrated one client-side API (Materialize) and two server-side APIs (Edamam & RapidAPI Fitness Calculator) to bring to you a meal generating webpage that suggests meals based on individually inputted user bio-metrics. Below is a sample output (yes, our application is rude and fat-shames most users, don't feel attacked).
 
 ![User Input](media/menuPage.PNG)
 
