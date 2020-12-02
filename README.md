@@ -4,6 +4,7 @@
 
 ## Table of Contents :file_folder:
 - [Description](#description)
+- [Future Changes](#future_changes)
 - [Tests](#tests)
 - [Technology](#technology)
 - [Contributors](#contributors)
