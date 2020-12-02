@@ -11,11 +11,11 @@
 - [Contact](#contact)
 
 ## Description :book:
-    Why foodiesUnite? Currently everyone is trying to find a way to cut costs, and save money to continue living during these uncertain times. What better place to start than your own kitchen? We wanted to create an app that helped us achieve a certain goal, whether you're simply looking for an idea for your next meal, looking to upgrade your culinary expertise, or even if you're trying to get jacked like Mr. Bean, we have something you'll like. By inputting your information (age, sex, height & weight) we'll be able to give you different meal options based on your desired goal. Gone are the days of wondering whether butter is a carb, and we'll always be here to reassure you that there has never been a sadness that can't be cured by breakfast food.
+Why foodiesUnite? Currently everyone is trying to find a way to cut costs, and save money to continue living during these uncertain times. What better place to start than your own kitchen? We wanted to create an app that helped us achieve a certain goal, whether you're simply looking for an idea for your next meal, looking to upgrade your culinary expertise, or even if you're trying to get jacked like Mr. Bean, we have something you'll like. By inputting your information (age, sex, height & weight) we'll be able to give you different meal options based on your desired goal. Gone are the days of wondering whether butter is a carb, and we'll always be here to reassure you that there has never been a sadness that can't be cured by breakfast food.
 
 ## Future Changes :milky_way:
 
-    Through designing and building this web application, our lack of health & nutrition expertise became apparent and we've learned a lot of valuable insight. We plan on implementing more input fields for users to provide additional information which we've found to be critical in calculating a more precise BMI. In tandem, we plan on reworking the JavaScript functionality to harness & process this information. Naturally we'll continue to update the aesthetic as we revisit this project with fresher sets of eyes. For now, we hope you enjoy!
+Through designing and building this web application, our lack of health & nutrition expertise became apparent and we've learned a lot of valuable insight. We plan on implementing more input fields for users to provide additional information which we've found to be critical in calculating a more precise BMI. In tandem, we plan on reworking the JavaScript functionality to harness & process this information. Naturally we'll continue to update the aesthetic as we revisit this project with fresher sets of eyes. For now, we hope you enjoy!
 
 ## Tests :bar_chart:
 Simply follow the link to our demo to fill your heart with joy, not cholesterol!
@@ -45,7 +45,7 @@ Cooper Ahearn - GitHub manager; layout & style mastermind
 <br>
 Desmond Aldridge - JavaScript virtuoso
 
-<a href="https://github.com/Athorpe96">![Profile Image](https://github.com/Athorpe96.png?size=50)</a>
+<a href="https://github.com/Athorpe96">![Profile Image](https://github.com/Athorpe96.png?size=6)</a>
 <a href="https://github.com/Athorpe96">![Badge](https://img.shields.io/badge/Github-Athorpe96-4cbbb9)</a>
 <br>
 Austin Thorpe - Concept innovator & backend engineer
