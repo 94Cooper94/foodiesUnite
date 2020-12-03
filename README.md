@@ -45,7 +45,7 @@ Cooper Ahearn - GitHub manager; layout & style mastermind
 <br>
 Desmond Aldridge - JavaScript virtuoso
 
-<a href="https://github.com/Athorpe96">![Profile Image](https://github.com/Athorpe96.png)</a>
+<a href="https://github.com/Athorpe96">![Profile Image](https://github.com/food.png?size=50)</a>
 <a href="https://github.com/Athorpe96">![Badge](https://img.shields.io/badge/Github-Athorpe96-4cbbb9)</a>
 <br>
 Austin Thorpe - Concept innovator & backend engineer
