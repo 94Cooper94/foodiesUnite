@@ -64,6 +64,6 @@ Connect with & contact the engineers directly via LinkedIn:
 :dvd: Austin - <a href="https://www.linkedin.com/in/https://www.linkedin.com/in/austin-thorpe-8322b6170/">austin-thorpe</a> :dvd:<br>
 :cd: Justin - <a href="https://www.linkedin.com/in/justin-pricer/">justin-pricer</a> :cd:<br>
 
-As always we're open to all forms of feedback & criticism. Feel free to follow or add any of our contributors on GitHub, or checkout the demo website's footer to connect with us on LinkedIn!
+As always we're open to all forms of feedback & criticism. Feel free to follow or add any of our contributors on GitHub or LinkedIn!
 
 Happy Coding!
